@@ -71,7 +71,8 @@ module.exports = {
 			},
 			borderRadius: {
 				'lg': '25px',
-				'gn': '52px'
+				'gen': '30px',
+				'med': '20px',
 			},
 			fontFamily: {
 				work: ['"Work Sans"'],
