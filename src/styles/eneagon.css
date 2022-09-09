@@ -32,6 +32,11 @@ h1 {
     text-4xl
 }
 
+h2 {
+    @apply
+    text-2xl
+}
+
 .card0 {
     @apply
     bg-gradient-to-tr from-glass-500 to-glass-200 
@@ -57,16 +62,12 @@ h1 {
 }
 
 
-.cardB1 {
+.cardB1, .cardB2 {
     @apply
-    bg-blue-500
+    p-5
+    bg-glass-500
     rounded-gn
 }
 
-.cardB2 {
-    @apply
-    bg-red-500
-    rounded-gn
-}
 
 
