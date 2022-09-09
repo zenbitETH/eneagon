@@ -7,5 +7,45 @@
 
 .card0 {
     @apply
-    bg-gradient-to-tr from-glass-500 to-glass-200 p-10 w-9/12 h-full rounded-gn   
+    bg-gradient-to-tr from-glass-500 to-glass-200 
+    p-10 w-9/12 h-5/6 rounded-gn
+    grid grid-cols-12    
 }
+
+.c1 {
+    @apply
+    grid grid-rows-2 gap-5
+    col-span-8
+}
+
+.c2 {
+    @apply
+    col-span-4
+}
+
+.c3 {
+    @apply
+    grid grid-cols-2 gap-5
+    rounded-gn
+}
+
+.cardT {
+    @apply
+    bg-gradient-to-tr from-purr-500 to-coral-500
+    px-10 pt-6 pb-3
+    rounded-gn
+}
+
+.cardB1 {
+    @apply
+    bg-blue-500
+    rounded-gn
+}
+
+.cardB2 {
+    @apply
+    bg-red-500
+    rounded-gn
+}
+
+
