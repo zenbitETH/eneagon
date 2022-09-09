@@ -5,6 +5,33 @@
 @tailwind components;
 @tailwind utilities;
 
+.usersCard {
+    @apply
+    bg-gradient-to-tr from-purr-500 to-coral-500
+    px-10 pt-6 pb-3
+    rounded-gn
+}
+
+.usersGrid {
+    @apply 
+    grid grid-cols-3 gap-5
+    h-full
+}
+
+.userSource {
+    @apply
+    p-5
+    bg-white
+    max-h-[85%]
+    rounded-lg
+
+}
+
+h1 {
+    @apply 
+    text-4xl
+}
+
 .card0 {
     @apply
     bg-gradient-to-tr from-glass-500 to-glass-200 
@@ -23,18 +50,12 @@
     col-span-4
 }
 
-.c3 {
+.teamStakeholders {
     @apply
     grid grid-cols-2 gap-5
     rounded-gn
 }
 
-.cardT {
-    @apply
-    bg-gradient-to-tr from-purr-500 to-coral-500
-    px-10 pt-6 pb-3
-    rounded-gn
-}
 
 .cardB1 {
     @apply

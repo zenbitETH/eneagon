@@ -4,8 +4,8 @@ import { FC } from 'react'
 import Link from 'next/link'
 import Image from 'next/image';
 import ThemeSwitcher from '@/components/ThemeSwitcher'
-import Header from '../components/header'; 
-import Dashboard from '@/components/dashboard';
+import Header from '@/components/Header'; 
+import Dashboard from '@/components/Dashboard';
 
 const Home: FC = () => {
 	return (
