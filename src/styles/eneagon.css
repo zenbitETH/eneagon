@@ -5,7 +5,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.bg {
+.card0 {
     @apply
-    
+    bg-gradient-to-tr from-glass-500 to-glass-200 p-10 w-9/12 h-full rounded-gn   
 }

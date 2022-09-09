@@ -4,7 +4,8 @@ import { FC } from 'react'
 import Link from 'next/link'
 import Image from 'next/image';
 import ThemeSwitcher from '@/components/ThemeSwitcher'
-import Header from '../components/header';
+import Header from '../components/header'; 
+import Dashboard from '@/components/dashboard';
 
 const Home: FC = () => {
 	return (
@@ -18,6 +19,7 @@ const Home: FC = () => {
 				
 			</div>
 			<Header/>
+			<Dashboard/>
 			<ThemeSwitcher className="absolute bottom-6 right-6" />
 			
 			

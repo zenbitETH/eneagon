@@ -49,6 +49,21 @@ module.exports = {
 					200: "#cdd7b6",
 					100: "#f0f3e9",//background light
 				},
+
+
+				glass: {
+					900: "#C1C0AD",//backgrounnd dark
+					800: "#f7f4b5",
+					700: "#bdbb8d",
+					600: "#9f9c5c",
+					500: "#FFFFFF80",//Error
+					400: "#99ae6a",
+					300: "#b3c390",
+					200: "#FFFFFF25",
+					100: "#f0f3e9",//background light
+				},
+
+				
 			  
 			},
 			spacing: {
@@ -56,6 +71,7 @@ module.exports = {
 			},
 			borderRadius: {
 				'lg': '25px',
+				'gn': '52px'
 			},
 			fontFamily: {
 				work: ['"Work Sans"'],
