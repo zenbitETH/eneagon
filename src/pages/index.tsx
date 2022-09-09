@@ -12,6 +12,8 @@ const Home: FC = () => {
 		<div className="relative flex items-top justify-center min-h-screen 
 
 		bg-gradient-to-tl from-purr-500 via-blu-500 to-coral-500
+
+		h-screen
 		
 		sm:items-center py-4 sm:pt-0">
 			
