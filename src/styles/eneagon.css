@@ -9,7 +9,7 @@
     @apply
     bg-gradient-to-tr from-purr-500 to-coral-500
     px-10 pt-6 pb-3
-    rounded-gn
+    rounded-gen
 }
 
 .usersGrid {
@@ -39,9 +39,9 @@ h2 {
 
 .card0 {
     @apply
-    bg-gradient-to-tr from-glass-500 to-glass-200 
-    p-10 w-9/12 h-5/6 rounded-gn
-    grid grid-cols-12    
+    
+    w-9/12 h-5/6 rounded-gen
+    grid grid-cols-12
 }
 
 .c1 {
@@ -58,7 +58,7 @@ h2 {
 .teamStakeholders {
     @apply
     grid grid-cols-2 gap-5
-    rounded-gn
+    rounded-gen
 }
 
 
@@ -66,7 +66,7 @@ h2 {
     @apply
     p-5
     bg-glass-500
-    rounded-gn
+    rounded-gen
 }
 
 
