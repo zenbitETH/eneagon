@@ -1,1 +1,1 @@
-export const APP_NAME = 'Eneagon'
+export const APP_NAME = 'zenbit.eth'
