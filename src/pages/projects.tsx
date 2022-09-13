@@ -1,9 +1,9 @@
 import Link from 'next/link'
 
-export default function page2() {
+export default function projects() {
     return (
         <div>
-            page2
+            page1
             <Link href='/'>
                 <a className=''>
                  home
