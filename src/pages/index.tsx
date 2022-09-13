@@ -9,7 +9,7 @@ import Dashboard from '@/components/Dashboard';
 
 const Home: FC = () => {
 	return (
-		<div className="relative flex items-top justify-center min-h-screen font-ar bg-gradient-to-br from-bgs-900 via-punk-500 to-solar-500 sm:items-center sm:pt-0">
+		<div className="relative flex items-top justify-center min-h-screen font-ar bg-gradient-to-br from-color2-500 to-color1-500 sm:items-center sm:pt-0">
 			<div className="absolute top-6 right-6">
 				
 			</div>

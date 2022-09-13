@@ -20,7 +20,7 @@ h2 {
 
 .usersCard {
     @apply
-    to-punk-500
+    to-color2-500
     px-5 pb-5
     rounded-gen 
     col-span-12 xl:col-span-3 2xl:col-span-2 
