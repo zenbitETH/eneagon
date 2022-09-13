@@ -22,12 +22,13 @@ h2 {
     @apply
     to-punk-500
     px-5 pb-5
-    rounded-gen col-span-3
+    rounded-gen 
+    col-span-12 xl:col-span-3 2xl:col-span-2 
 }
 
 .usersGrid {
     @apply 
-    grid gap-5
+    grid sm:grid-cols-1 md:grid-cols-3 xl:grid-cols-1 gap-5 
     h-full
 }
 
@@ -79,7 +80,8 @@ h2 {
     py-5 pb-14
     bg-glass-100 border-white border
     w-full h-5/6 rounded-gen
-    grid grid-cols-12
+    grid grid-cols-12 grid-rows-6 xl:grid-rows-1
+    my-20 xl:my-0 h-[fit] xl:h-[80vh]
 }
 
 .c1 {
@@ -88,10 +90,11 @@ h2 {
     col-span-4
 }
 
-.c2 {
+.projects {
     @apply
-    col-span-5
-    h-[97.5%]
+    row-span-3 xl:row-span-1
+    col-span-12 xl:col-span-5
+    mx-5 xl:mx-0 h-[97.5%] 
 }
 
 .projectGrid {
@@ -104,7 +107,9 @@ h2 {
 
 .teamCard {
     @apply
-    col-span-4 gap-5 mx-5 grid
+    grid grid-cols-2 xl:grid-cols-1
+    row-span-2
+    col-span-12 xl:col-span-4 2xl:col-span-5 gap-5 mx-5 grid
     rounded-gen h-full
 }
 

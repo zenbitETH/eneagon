@@ -69,6 +69,11 @@ module.exports = {
 			spacing: {
 				88: "22rem",
 			},
+			screens: {
+				'2xl': '1800px',
+				'xl': '1200px',
+				'md': '900px',
+			  },
 			borderRadius: {
 				'lg': '25px',
 				'gen': '30px',
@@ -80,11 +85,6 @@ module.exports = {
 			},
 			container: {
 				center: true,
-				screens: {
-				  'hd': '1920px',
-				  'qhd': '2560px',
-				  'uhd': '3840px',
-				},
 			},
 		},
 	},
