@@ -3,25 +3,34 @@ import Users from "./Cards/Users"
 export default function Dashboard() {
     return (
        <div className="card0">
-        <div className="c1">
-          <Users/>
-          <div className="teamStakeholders">
-            <div className="cardB1">
-              <h2>Developers</h2>
-              <div>1. Github members</div>
-              <div>2. Repositories contributors</div>
-              <div>3. Dev Roles</div>
-              <div>4. Code Languages</div>
-            </div>
-
-            <div className="cardB2">
-              <h2>Stakeholders</h2>
-              <div>Pending on contracts logic</div>
-            </div>
+        <Users/>
+        <div className="projects mt-10 xl:mt-0">
+          <h1 className="mb-2">Projects</h1>
+          <div className="projectGrid">
+            
           </div>
         </div>
+        
+          <div className="teamCard mt-16 xl:mt-0">
+            <div className="teamMembers">
+              <h1 className="mb-2 ">Members</h1>
+              <div className="teamGrid">
 
-        <div className="c2">Projects</div>
+              </div>
+            </div>
+            <div className="teamStakeholders">
+              <h1 className="mb-2">Stakeholders</h1>
+              <div className="teamGrid">
+                
+              </div>
+            </div>
+            
+            
+              
+            
+          </div>
+
+       
        
     
        </div>

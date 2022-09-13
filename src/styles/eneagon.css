@@ -9,7 +9,7 @@
 
 h1 {
     @apply 
-    text-4xl
+    text-3xl
     font-bold
 }
 
@@ -20,14 +20,14 @@ h2 {
 
 .usersCard {
     @apply
-    bg-gradient-to-tr from-solar-500 to-punk-500
-    px-5 pt-3 pb-8
-    rounded-gen
+    to-punk-500
+    px-5 pb-5
+    rounded-gen col-span-3
 }
 
 .usersGrid {
     @apply 
-    grid grid-cols-3 gap-5
+    grid gap-5
     h-full
 }
 
@@ -35,7 +35,7 @@ h2 {
     @apply
     p-5
     bg-glass-100
-    max-h-[85%]
+    h-full
     rounded-lg
 }
 
@@ -75,36 +75,49 @@ h2 {
 
 .card0 {
     @apply
-    m-5
-    p-5
-    bg-white
+    mx-10
+    py-5 pb-14
+    bg-glass-100 border-white border
     w-full h-5/6 rounded-gen
     grid grid-cols-12
 }
 
 .c1 {
     @apply
-    grid grid-rows-2 gap-5
-    col-span-8
+    grid grid-cols-2 gap-5
+    col-span-4
 }
 
 .c2 {
     @apply
-    col-span-4
+    col-span-5
+    h-[97.5%]
 }
 
-.teamStakeholders {
+.projectGrid {
     @apply
-    grid grid-cols-2 gap-5
+    bg-glass-100
     rounded-gen
+    p-5 
+    h-full
 }
 
-
-.cardB1, .cardB2 {
+.teamCard {
     @apply
-    p-5
-    bg-glass-500
-    rounded-gen
+    col-span-4 gap-5 mx-5 grid
+    rounded-gen h-full
+}
+
+.teamGrid {
+    @apply
+    bg-glass-100
+    h-full rounded-gen p-5
+}
+
+.teamMembers, .teamStakeholders {
+    @apply
+    h-[92.5%] rounded-gen
+    
 }
 
 
