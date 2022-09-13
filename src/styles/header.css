@@ -30,6 +30,6 @@
 .menuItem {
     @apply 
     py-2 px-4 md:p-0 text-xl 
-    hover:text-solar-500 cursor-pointer
+    hover:text-color1-500 cursor-pointer
      
 }

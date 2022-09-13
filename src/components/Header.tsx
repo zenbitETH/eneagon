@@ -6,7 +6,7 @@ export default function Header() {
         <div className="header">
           <div className="wrap">
           <a href="/" className="">
-              <span className="">zenbit.eth</span>
+              <span className="text-3xl">Eneagon</span>
           </a>
           <div className="flex md:order-2">
             <button type="button" className=""><ConnectWallet /></button>
