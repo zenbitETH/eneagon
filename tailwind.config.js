@@ -14,53 +14,53 @@ module.exports = {
 		extend: {
 			colors: {
 				display: ["group-hover"],
-				purr: {
-				  900: "#4e5940",
-				  800: "#01a66350",
-				  600: "#2a4238",
-				  700: "#22362e",
-				  500: "#A898DF",//Main
-				  400: "#347359",
-				  300: "#27805c",
-				  200: "#21865d",
-				  100: "#01a663",
+				solar: {
+				  900: "#402708",
+				  800: "#855111",
+				  600: "#cb7c1a",
+				  700: "#e49028",
+				  500: "#E8A24B",//Main
+				  400: "#ecb46e",
+				  300: "#f1c691",
+				  200: "#f5d8b3",
+				  100: "#fcf3e8",
 			  },
-  
-				blu: {
-				  900: "#fd5f0950",
-				  800: "#8b817b",
-				  700: "#b0a8a3",
-				  600: "#9e7b68",
-				  500: "#719CE4",//Main
-				  600: "#c47042",
-				  300: "#ea641c",
-				  200: "#f46112",
-				  100: "#fd5f09",
+			
+				punk: {
+				  900: "#09312f",
+				  800: "#11635f",
+				  700: "#14746f",
+				  600: "#1a958f",
+				  500: "#1DA69F",//Main
+				  600: "#20b7af",
+				  300: "#26d8cf",
+				  200: "#9aede9",
+				  100: "#bbf3f0",
 				},
   
-				coral: {
-					900: "#C1C0AD",//backgrounnd dark
-					800: "#f7f4b5",
-					700: "#bdbb8d",
-					600: "#9f9c5c",
-					500: "#E48072",//Error
-					400: "#99ae6a",
-					300: "#b3c390",
-					200: "#cdd7b6",
-					100: "#f0f3e9",//background light
+				bgs: {
+					900: "#0567A8",//backgrounnd dark
+					800: "#067ece",
+					700: "#0796f4",
+					600: "#022d49",
+					500: "#E05D5D",//Error
+					400: "#ffe397",
+					300: "#fff3d1",
+					200: "#f3f2f1",
+					100: "#FFF8E5",//background light
 				},
 
 
 				glass: {
-					900: "#C1C0AD",//backgrounnd dark
-					800: "#f7f4b5",
-					700: "#bdbb8d",
-					600: "#9f9c5c",
-					500: "#FFFFFF80",//Error
-					400: "#99ae6a",
-					300: "#b3c390",
-					200: "#FFFFFF25",
-					100: "#f0f3e9",//background light
+					900: "#022d4950",//glass dark
+					800: "#1DA69F80",
+					700: "#0796f425",
+					600: "#00000075",
+					500: "#E05D5D80",
+					400: "#ffffff75",
+					300: "#ffe39725",
+					200: "#E8A24B80",
+					100: "#FFF8E550",//glass light
 				},
 
 				
@@ -75,7 +75,8 @@ module.exports = {
 				'med': '20px',
 			},
 			fontFamily: {
-				work: ['"Work Sans"'],
+				ar: ['Archivo'],
+				k2: ['K2D'],
 			},
 			container: {
 				center: true,
