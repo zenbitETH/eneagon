@@ -1,9 +1,9 @@
 import Link from 'next/link'
 
-export default function page3() {
+export default function stakeholders() {
     return (
         <div>
-            page3
+            page2
             <Link href='/'>
                 <a className=''>
                  home

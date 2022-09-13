@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.header {
+    @apply
+    fixed top-0 w-full px-5 sm:px-10 py-2.5 rounded bg-transparent
+}
+
+.wrap {
+    @apply
+    container flex flex-wrap justify-between items-center mx-auto
+}
+
+.menuBT {
+    @apply
+    inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600
+}
+
+.menu {
+    @apply
+    hidden justify-between items-center w-full md:flex md:w-auto md:order-1
+}
+
+.menuContainer {
+    @apply
+    flex flex-col md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 bg-transparent text-white
+}
+
+.menuItem {
+    @apply 
+    py-2 px-4 md:p-0 text-xl 
+    hover:text-solar-500 cursor-pointer
+     
+}

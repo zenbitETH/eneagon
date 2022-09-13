@@ -3,32 +3,32 @@ import Link from 'next/link'
 
 export default function Header() {
     return (
-        <div className="fixed top-0 w-full border-gray-200 px-2 sm:px-4 py-2.5 rounded bg-transparent">
-          <div className="container flex flex-wrap justify-between items-center mx-auto">
-          <a href="/yarn-error.log" className="flex items-center">
-
-              <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Eneagon</span>
+        <div className="header">
+          <div className="wrap">
+          <a href="/" className="">
+              <span className="">zenbit.eth</span>
           </a>
           <div className="flex md:order-2">
-              <button type="button" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"><ConnectWallet />
-              </button>
-
-
-              <button data-collapse-toggle="navbar-cta" type="button" className="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-cta" aria-expanded="false">
-                <span className="sr-only">Open main menu</span>
-                
+            <button type="button" className=""><ConnectWallet /></button>
+            <button data-collapse-toggle="navbar-cta" type="button" className="menuBT" aria-controls="navbar-cta" aria-expanded="false">
+              <span className="sr-only">Open main menu</span>
             </button>
           </div>
-          <div className="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="navbar-cta">
-            <ul className="flex flex-col p-4 mt-4 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 bg-transparent text-white">
+          <div className="menu" id="navbar-cta">
+            <ul className="menuContainer">
               <li>
-                <a href="#" className="block py-2 pr-4 pl-3 rounded hover:bg-gray-100 md:p-0">Projects</a>
+                <Link href="projects">
+                  <a  className="menuItem">Projects</a>
+                </Link>
+                
               </li>
               <li>
-                <a href="#" className="block py-2 pr-4 pl-3 rounded hover:bg-gray-100 md:p-0">Stakeholders </a>
+                <Link href="stakeholders">
+                  <a  className="menuItem">Stakeholders</a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="block py-2 pr-4 pl-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 dark:border-gray-700">Docs</a>
+                <a href="/" className="menuItem">Docs</a>
               </li>
             </ul>
           </div>
