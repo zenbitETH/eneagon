@@ -1,14 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Work+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,200;0,400;0,700;0,900;1,200;1,400;1,700;1,900&family=K2D:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;1,100;1,300;1,400;1,500;1,700;1,800&display=swap');
+
 
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+
+h1 {
+    @apply 
+    text-4xl
+    font-bold
+}
+
+h2 {
+    @apply
+    text-2xl
+}
+
 .usersCard {
     @apply
-    bg-gradient-to-tr from-purr-500 to-coral-500
-    px-10 pt-6 pb-3
+    bg-gradient-to-tr from-solar-500 to-punk-500
+    px-5 pt-3 pb-5
     rounded-gen
 }
 
@@ -21,26 +34,51 @@
 .userSource {
     @apply
     p-5
-    bg-white
+    bg-glass-100
     max-h-[85%]
     rounded-lg
-
 }
 
-h1 {
-    @apply 
-    text-4xl
-}
-
-h2 {
+.userTotal {
     @apply
-    text-2xl
+    text-5xl text-center
+    my-5
+}
+
+.userWebs, .userOffchain, .userOnchain  {
+    @apply
+    grid
+    text-center
+}
+
+.userWebs {
+    @apply
+    grid-cols-5
+}
+
+.userOffchain {
+    @apply
+    grid-cols-2
+}
+
+.userOnchain {
+    @apply
+    grid-cols-4
+}
+
+.webBt {
+    @apply
+    rounded-full h-10 w-10 mx-auto 
+    grid items-center bg-glass-600
+    text-white cursor-pointer
 }
 
 .card0 {
     @apply
-    
-    w-9/12 h-5/6 rounded-gen
+    m-5
+    p-5
+    bg-white
+    w-full h-5/6 rounded-gen
     grid grid-cols-12
 }
 
