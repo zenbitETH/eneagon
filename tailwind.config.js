@@ -12,6 +12,9 @@ module.exports = {
 	},
 	theme: {
 		extend: {
+			maxHeight: {
+				'half': '50%',
+			  },
 			colors: {
 				display: ["group-hover"],
 				color1: {

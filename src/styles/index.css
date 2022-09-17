@@ -5,13 +5,20 @@
 @tailwind utilities;
 
 
-.tabUsers, .tabMembers, .tabStakeholders {
+
+
+.tabUsers, .tabMembers {
     @apply 
     font-bold
     text-xl 
-    pb-5  
-    rounded-t-gen
+    z-10
+    w-fit
     text-color1-500 
+    col-span-12
+    w-1/5
+    pt-5
+    -mt-4
+    rounded-gen
 }
 
 .tabUsers{
@@ -23,12 +30,7 @@
 .tabMembers {
     @apply
     text-color1-500
-    col-span-12
-}
-
-.tabStakeholders {
-    @apply
-    text-color1-500
+    
 }
 
 h2 {
@@ -150,29 +152,28 @@ h2 {
 .teamCard {
     @apply
     grid grid-cols-2 xl:grid-cols-1
-    
+    row-span-6 grid-rows-6
     col-span-12 xl:col-span-3 gap-5 mx-5 grid
     rounded-gen h-full
-    
+    gap-5
     
     max-w-[423px] 
 }
 
-.teamGrid {
-    @apply
-    bg-backgrounds-500
-    h-full rounded-gen p-5
-}
+
 
 .memberGrid {
     @apply
-    grid grid-cols-12
+    grid grid-cols-12    
+    gap-5 grid pt-5 
+    items-center
 }
 
-.memberPhoto {
+.memberPhoto, .stakeholderPhoto {
     @apply
     col-span-2
     text-center
+    grid items-center
 }
 
 .memberData {
@@ -180,7 +181,13 @@ h2 {
     col-span-10
 }
 
-.memberName {
+.stakeholderData {
+    @apply
+    col-span-8
+    
+}
+
+.memberName, .stakeholderName {
     @apply
     font-bold
 }
@@ -190,11 +197,24 @@ h2 {
     italic
 }
 
-.teamMembers, .teamStakeholders {
+.stakeholderStats {
+    @apply
+    grid grid-cols-3
+    text-left
+    w-4/5
+
+}
+
+.teamMembers {
     @apply
     rounded-gen
-    
+    row-span-3
+    overflow-auto
+    bg-backgrounds-500
+    p-5
 }
+
+
 
 
 
