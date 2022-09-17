@@ -3,8 +3,8 @@
 export default function Users() {
     return (
       <div className="usersCard">
-        <h1 className="mb-2">Users</h1>
         <div className="usersGrid">
+          <div className="tabUsers">Users</div>
           <div className="userSource">
             <h2>Community</h2>
             <div className="userTotal">10,000</div>
