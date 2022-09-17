@@ -4,7 +4,7 @@ import { ConnectKitButton } from 'connectkit'
 
 type Visibility = 'always' | 'connected' | 'not_connected'
 
-const ConnectWallet: FC<{ show?: Visibility }> = ({ show = 'always' }) => {
+const ConnectWallet: FC<{ show?: Visibility }> = ({ show = 'never' }) => {
 	const { isConnected } = useAccount()
 
 	if ((show == 'connected' && !isConnected) || (show == 'not_connected' && isConnected)) return null

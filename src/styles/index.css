@@ -1,16 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,200;0,400;0,700;0,900;1,200;1,400;1,700;1,900&family=K2D:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;1,100;1,300;1,400;1,500;1,700;1,800&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,200;0,400;0,500;0,700;0,900;1,200;1,400;1,500;1,700;1,900&family=K2D:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;1,100;1,300;1,400;1,500;1,700;1,800&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 
-h1 {
+
+
+.tabUsers, .tabMembers {
     @apply 
-    text-3xl
     font-bold
+    text-xl 
+    z-10
+    w-fit
+    text-color1-500 
+    col-span-12
+    w-1/5
+    pt-5
+    -mt-4
+    rounded-gen
+}
+
+.tabUsers{
+    @apply
+    
+    -mb-10
+}
+
+.tabMembers {
+    @apply
+    text-color1-500
+    
 }
 
 h2 {
@@ -20,8 +40,8 @@ h2 {
 
 .usersCard {
     @apply
-    to-punk-500
-    px-5 pb-5
+    to-color2-500
+    px-5
     rounded-gen 
     col-span-12 xl:col-span-3 2xl:col-span-2 
 }
@@ -29,21 +49,29 @@ h2 {
 .usersGrid {
     @apply 
     grid sm:grid-cols-1 md:grid-cols-3 xl:grid-cols-1 gap-5 
+    bg-backgrounds-500 rounded-gen p-5
     h-full
 }
 
 .userSource {
     @apply
-    p-5
-    bg-glass-100
+    py-3 px-2
+    bg-glass-700
     h-full
-    rounded-lg
+    rounded-dc
+}
+
+.userTittle {
+    @apply
+    ml-5
+    font-bold text-xl
 }
 
 .userTotal {
     @apply
-    text-5xl text-center
-    my-5
+    text-5xl text-center text-color1-500
+    font-bold
+    my-10
 }
 
 .userWebs, .userOffchain, .userOnchain  {
@@ -59,12 +87,22 @@ h2 {
 
 .userOffchain {
     @apply
-    grid-cols-2
+    grid-cols-2   
+    text-center 
 }
 
 .userOnchain {
     @apply
     grid-cols-4
+}
+
+.userBt {
+    @apply
+    rounded-full bg-backgrounds-600
+    hover:cursor-pointer 
+    grid
+    mx-auto
+    w-[30px] h-[30px]
 }
 
 .webBt {
@@ -74,15 +112,22 @@ h2 {
     text-white cursor-pointer
 }
 
-.card0 {
+.card0, .projectsCard {
     @apply
     mx-10
     py-5 pb-14
     bg-glass-100 border-white border
     w-full h-5/6 rounded-gen
-    grid grid-cols-12 grid-rows-6 xl:grid-rows-1
+    grid grid-rows-6 
     my-20 xl:my-0 h-[fit] xl:h-[80vh]
 }
+
+.card0 {
+    @apply
+    xl:grid-rows-1
+    grid-cols-12
+}
+
 
 .c1 {
     @apply
@@ -92,14 +137,13 @@ h2 {
 
 .projects {
     @apply
-    row-span-3 xl:row-span-1
-    col-span-12 xl:col-span-5
-    mx-5 xl:mx-0 h-[97.5%] 
+    col-span-12 xl:col-span-6 2xl:col-span-7
+    mx-5 xl:mx-0 
 }
 
 .projectGrid {
     @apply
-    bg-glass-100
+    bg-backgrounds-500
     rounded-gen
     p-5 
     h-full
@@ -108,22 +152,69 @@ h2 {
 .teamCard {
     @apply
     grid grid-cols-2 xl:grid-cols-1
-    row-span-2
-    col-span-12 xl:col-span-4 2xl:col-span-5 gap-5 mx-5 grid
+    row-span-6 grid-rows-6
+    col-span-12 xl:col-span-3 gap-5 mx-5 grid
     rounded-gen h-full
+    gap-5
+    
+    max-w-[423px] 
 }
 
-.teamGrid {
+
+
+.memberGrid {
     @apply
-    bg-glass-100
-    h-full rounded-gen p-5
+    grid grid-cols-12    
+    gap-5 grid pt-5 
+    items-center
 }
 
-.teamMembers, .teamStakeholders {
+.memberPhoto, .stakeholderPhoto {
     @apply
-    h-[92.5%] rounded-gen
+    col-span-2
+    text-center
+    grid items-center
+}
+
+.memberData {
+    @apply
+    col-span-10
+}
+
+.stakeholderData {
+    @apply
+    col-span-8
     
 }
+
+.memberName, .stakeholderName {
+    @apply
+    font-bold
+}
+
+.memberRole {
+    @apply
+    italic
+}
+
+.stakeholderStats {
+    @apply
+    grid grid-cols-3
+    text-left
+    w-4/5
+
+}
+
+.teamMembers {
+    @apply
+    rounded-gen
+    row-span-3
+    overflow-auto
+    bg-backgrounds-500
+    p-5
+}
+
+
 
 
 

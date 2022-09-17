@@ -12,59 +12,72 @@ module.exports = {
 	},
 	theme: {
 		extend: {
+			maxHeight: {
+				'half': '50%',
+			  },
 			colors: {
 				display: ["group-hover"],
-				solar: {
-				  900: "#402708",
-				  800: "#855111",
-				  600: "#cb7c1a",
-				  700: "#e49028",
-				  500: "#E8A24B",//Main
-				  400: "#ecb46e",
-				  300: "#f1c691",
-				  200: "#f5d8b3",
-				  100: "#fcf3e8",
+				color1: {
+				  900: "#0b113a",
+				  800: "#18257b",
+				  600: "#2233ad",
+				  700: "#3347d7",
+				  500: "#4356DA",//Main
+				  400: "#6473e0",
+				  300: "#95a0ea",
+				  200: "#b6bdf1",
+				  100: "#e7e9fa",
 			  },
 			
-				punk: {
-				  900: "#09312f",
-				  800: "#11635f",
-				  700: "#14746f",
-				  600: "#1a958f",
-				  500: "#1DA69F",//Main
-				  600: "#20b7af",
-				  300: "#26d8cf",
-				  200: "#9aede9",
-				  100: "#bbf3f0",
+				color2: {
+				  900: "#49150e",
+				  800: "#7a2417",
+				  700: "#d74530",
+				  600: "#de6251",
+				  500: "#E48072",//Main
+				  600: "#ea9e93",
+				  300: "#f1bbb4",
+				  200: "#f7d9d5",
+				  100: "#fdf7f6",
 				},
   
-				bgs: {
-					900: "#0567A8",//backgrounnd dark
-					800: "#067ece",
-					700: "#0796f4",
-					600: "#022d49",
-					500: "#E05D5D",//Error
-					400: "#ffe397",
-					300: "#fff3d1",
-					200: "#f3f2f1",
-					100: "#FFF8E5",//background light
+				backgrounds: {
+					900: "#719CE4",//backgrounnd dark
+					800: "#2765cc",
+					700: "#b3caf1",
+					600: "#9E9E9E",//button
+					500: "#FAFAFA",//white
+					400: "#1d133e",
+					300: "#5538b5",
+					200: "#cec5ed",
+					100: "#A898DF",//background light
 				},
 
+				hover: {
+					900: "#719CE4",//backgrounnd dark
+					800: "#2765cc",
+					700: "#CB3837",//npm
+					600: "#238636",//github
+					500: "#02500F",//lens
+					400: "#D5005E",//instagram
+					300: "#007AB9",//linkedin
+					200: "#55ACEF",//twitter
+					100: "#5865F2",//discord
+				},
 
 				glass: {
 					900: "#022d4950",//glass dark
-					800: "#1DA69F80",
-					700: "#0796f425",
+					800: "#E4807280",
+					700: "#00000025",
 					600: "#00000075",
-					500: "#E05D5D80",
+					500: "#72e48080",
 					400: "#ffffff75",
-					300: "#ffe39725",
-					200: "#E8A24B80",
-					100: "#FFF8E550",//glass light
+					300: "#ffffff25",
+					200: "#4356DA80",
+					100: "#FFFFFF50",//glass light
 				},
 
-				
-			  
+			
 			},
 			spacing: {
 				88: "22rem",
@@ -75,9 +88,11 @@ module.exports = {
 				'md': '900px',
 			  },
 			borderRadius: {
+				'dc': '12px',
 				'lg': '25px',
-				'gen': '30px',
+				'gen': '32px',
 				'med': '20px',
+				'but': '52px',
 			},
 			fontFamily: {
 				ar: ['Archivo'],
