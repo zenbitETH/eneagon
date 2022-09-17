@@ -42,7 +42,7 @@ module.exports = {
 					900: "#719CE4",//backgrounnd dark
 					800: "#2765cc",
 					700: "#b3caf1",
-					600: "#0b1b38",
+					600: "#9E9E9E",//button
 					500: "#FAFAFA",//white
 					400: "#1d133e",
 					300: "#5538b5",
@@ -50,6 +50,17 @@ module.exports = {
 					100: "#A898DF",//background light
 				},
 
+				hover: {
+					900: "#719CE4",//backgrounnd dark
+					800: "#2765cc",
+					700: "#CB3837",//npm
+					600: "#238636",//github
+					500: "#02500F",//lens
+					400: "#D5005E",//instagram
+					300: "#007AB9",//linkedin
+					200: "#55ACEF",//twitter
+					100: "#5865F2",//discord
+				},
 
 				glass: {
 					900: "#022d4950",//glass dark
@@ -63,8 +74,7 @@ module.exports = {
 					100: "#FFFFFF50",//glass light
 				},
 
-				
-			  
+			
 			},
 			spacing: {
 				88: "22rem",
@@ -75,8 +85,9 @@ module.exports = {
 				'md': '900px',
 			  },
 			borderRadius: {
+				'dc': '12px',
 				'lg': '25px',
-				'gen': '30px',
+				'gen': '32px',
 				'med': '20px',
 			},
 			fontFamily: {
