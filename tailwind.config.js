@@ -89,6 +89,7 @@ module.exports = {
 				'lg': '25px',
 				'gen': '32px',
 				'med': '20px',
+				'but': '52px',
 			},
 			fontFamily: {
 				ar: ['Archivo'],

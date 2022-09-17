@@ -1,15 +1,17 @@
 import ConnectWallet from '@/components/ConnectWallet'
 import Link from 'next/link'
+import Image from "next/image"
+import ene from "../assets/eneagon.svg"
 
 export default function Header() {
     return (
         <div className="header">
           <div className="wrap">
           <a href="/" className="">
-              <span className="text-3xl">Eneagon</span>
+              <Image height={50} width={256} src={ene}/>
           </a>
           <div className="flex md:order-2">
-            <button type="button" className=""><ConnectWallet /></button>
+            <div className="border-white border rounded-but py-1 px-10 hover:bg-color1-500 text-white hover:border-color1-500"><ConnectWallet /></div>
             <button data-collapse-toggle="navbar-cta" type="button" className="menuBT" aria-controls="navbar-cta" aria-expanded="false">
               <span className="sr-only">Open main menu</span>
             </button>
