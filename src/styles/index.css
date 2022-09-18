@@ -138,16 +138,34 @@ h2 {
 .projects {
     @apply
     col-span-12 xl:col-span-6 2xl:col-span-7
-    mx-5 xl:mx-0 
+    mx-5 xl:mx-0
+    bg-backgrounds-500
+    rounded-gen
+    p-5 
 }
 
 .projectGrid {
     @apply
-    bg-backgrounds-500
-    rounded-gen
-    p-5 
-    h-full
+    p-3
+    bg-glass-200
+    grid gap-3
 }
+
+.projectHeader, .projectStats {
+    @apply
+    grid grid-cols-12 items-center
+}
+
+.projectNum {
+    @apply
+    grid grid-cols-2
+}
+
+.projectText {
+    @apply
+    grid grid-cols-6 text-center
+}
+
 
 .teamCard {
     @apply
@@ -155,8 +173,6 @@ h2 {
     row-span-6 grid-rows-6
     col-span-12 xl:col-span-3 gap-5 mx-5 grid
     rounded-gen h-full
-    gap-5
-    
     max-w-[423px] 
 }
 
@@ -213,8 +229,4 @@ h2 {
     bg-backgrounds-500
     p-5
 }
-
-
-
-
 
