@@ -1,6 +1,5 @@
 import ConnectWallet from '@/components/ConnectWallet'
 import Link from 'next/link'
-import Image from "next/image"
 import Ene from "../assets/Ene"
 
 export default function Header() {
@@ -27,7 +26,7 @@ export default function Header() {
                 
               </li>
               <li>
-                <Link href="stakeholders">
+                <Link href="members">
                   <a  className="menuItem">Members</a>
                 </Link>
               </li>
