@@ -1,17 +1,17 @@
 import ConnectWallet from '@/components/ConnectWallet'
 import Link from 'next/link'
 import Image from "next/image"
-import ene from "../assets/eneagon.svg"
+import Ene from "../assets/Ene"
 
 export default function Header() {
     return (
         <div className="header">
           <div className="wrap">
           <a href="/" className="">
-              <Image height={50} width={256} src={ene}/>
+              <Ene/>
           </a>
           <div className="flex md:order-2">
-            <div className="border-white border rounded-but py-1 px-10 hover:bg-color1-500 text-white hover:border-color1-500">
+            <div className="border-backgrounds-400 dark:border-white border rounded-but py-1 px-10 hover:cursor-pointer dark:hover:bg-color2-500 hover:bg-color1-500 text-backgrounds-400 dark:text-white hover:border-color1-500">
               <ConnectWallet />
             </div>
             <button data-collapse-toggle="navbar-cta" type="button" className="menuBT" aria-controls="navbar-cta" aria-expanded="false">
@@ -28,11 +28,13 @@ export default function Header() {
               </li>
               <li>
                 <Link href="stakeholders">
-                  <a  className="menuItem">Stakeholders</a>
+                  <a  className="menuItem">Members</a>
                 </Link>
               </li>
               <li>
-                <a href="/" className="menuItem">Docs</a>
+                <Link href="stakeholders">
+                  <a  className="menuItem">Stakeholders</a>
+                </Link>
               </li>
             </ul>
           </div>
