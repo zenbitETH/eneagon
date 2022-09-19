@@ -4,27 +4,11 @@ import badge from "../../assets/badges.svg"
 import projects from "../../assets/projects.svg"
 import donado from "../../assets/donated.svg"
 
-export default function Members() {
+export default function Stakeholder() {
     return (
-      <div className="teamCard mt-16 xl:mt-0">
+
       <div className="teamMembers">
-        
-        
-          <div className="">
-          <h1 className="tabMembers ">Members</h1>
-          <div className="memberGrid">
-            <div className="memberPhoto">
-              <Image src={blank} height={50} width={50}/>
-            </div>
-            <div className="memberData">
-              <div className="memberName">Username / @username.xyz</div>
-              <div className="memberRole">Role</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="teamMembers">
-          <div className="">
+        <div className="">
           <h1 className="tabMembers ">Stakeholders</h1>
           <div className="memberGrid">
             <div className="col-span-2 font-bold text-center">1</div>
@@ -50,10 +34,7 @@ export default function Members() {
             </div>
             <div className="col-span-12 border-b"/>
           </div>
-          </div>
-
         </div>
-      
-    </div>
+      </div>
     )
 }
