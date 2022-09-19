@@ -5,10 +5,6 @@
 @tailwind utilities;
 
 
-
-
-
-
 .tabUsers, .tabMembers {
     @apply 
     font-bold
@@ -115,8 +111,7 @@ h2 {
 
 .card0, .projectsCard {
     @apply
-    mx-10
-    py-5 pb-14
+    mx-24 py-5
     bg-glass-100 border-white border
     w-full h-5/6 rounded-gen
     grid grid-rows-6 
@@ -147,7 +142,7 @@ h2 {
 
 .projectGrid {
     @apply
-    p-3
+
     
     grid gap-3
 }
