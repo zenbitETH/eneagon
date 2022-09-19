@@ -1,5 +1,5 @@
 import ConnectWallet from '@/components/ConnectWallet'
-import Link from 'next/link'
+
 import Ene from "../assets/Ene"
 
 export default function Header() {
@@ -17,26 +17,7 @@ export default function Header() {
               <span className="sr-only">Open main menu</span>
             </button>
           </div>
-          <div className="menu" id="navbar-cta">
-            <ul className="menuContainer">
-              <li>
-                <Link href="projects">
-                  <a  className="menuItem">Projects</a>
-                </Link>
-                
-              </li>
-              <li>
-                <Link href="members">
-                  <a  className="menuItem">Members</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="stakeholders">
-                  <a  className="menuItem">Stakeholders</a>
-                </Link>
-              </li>
-            </ul>
-          </div>
+          
           </div>
         </div>
     )
