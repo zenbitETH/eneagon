@@ -37,15 +37,15 @@ export default function Dashboard() {
                     <div className="col-span-5">language</div>
                   </div>
                   <div className="projectNum">
-                    <div className="text-right">10</div>
+                    <div className="projectNumbold">10</div>
                     <div className="text-left">♀</div>
                   </div>
                   <div className="projectNum">
-                    <div className="text-right">10</div>
+                    <div className="projectNumbold">10</div>
                     <div className="text-left">♀</div>
                   </div>
                   <div className="projectText">
-                    <div className="text-center">10</div>
+                    <div className="projectNumbold">10</div>
                     <div className="col-span-5">w/dowloads</div>
                   </div>
                   
@@ -63,7 +63,7 @@ export default function Dashboard() {
                 </div>
                 <div className="col-span-6 text-center grid grid-cols-2">
                   <div>
-                    Soulbounded badges
+                    Badges
                   </div>
                   <div>
                     Funded
