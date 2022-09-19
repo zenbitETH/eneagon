@@ -18,7 +18,7 @@ module.exports = {
 			colors: {
 				display: ["group-hover"],
 				color1: {
-				  900: "#0b113a",
+				  900: "#283483",
 				  800: "#18257b",
 				  600: "#2233ad",
 				  700: "#3347d7",
@@ -30,7 +30,7 @@ module.exports = {
 			  },
 			
 				color2: {
-				  900: "#49150e",
+				  900: "#894D44",
 				  800: "#7a2417",
 				  700: "#d74530",
 				  600: "#de6251",
@@ -47,7 +47,7 @@ module.exports = {
 					700: "#b3caf1",
 					600: "#9E9E9E",//button
 					500: "#FAFAFA",//white
-					400: "#1d133e",
+					400: "#2D3134",
 					300: "#5538b5",
 					200: "#cec5ed",
 					100: "#A898DF",//background light

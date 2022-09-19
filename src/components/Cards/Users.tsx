@@ -34,7 +34,7 @@ export default function Users() {
             </div>
           </div>
               
-          <div className="userSource">
+          <div className="userSource border-y-2">
             <h2 className="userTittle">Off-Chain Users</h2>
             <div className="userTotal">1 K</div>
             <div className="userOffchain ">
