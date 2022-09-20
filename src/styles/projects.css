@@ -5,7 +5,7 @@
 .newProjectCard {
     @apply
     grid-cols-3
-    px-5 gap-5 md
+    px-5 gap-5
 }
 
 .newProject, .allProjects {
