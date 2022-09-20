@@ -21,7 +21,6 @@
 
 .tabUsers{
     @apply
-    
     -mb-10
 }
 
@@ -130,47 +129,6 @@ h2 {
     grid grid-cols-2 gap-5
     col-span-4
 }
-
-.projects {
-    @apply
-    col-span-12 xl:col-span-6 2xl:col-span-7
-    mx-5 xl:mx-0
-    bg-backgrounds-500 dark:bg-backgrounds-400
-    rounded-gen
-    p-5 
-}
-
-.projectGrid {
-    @apply
-
-    
-    grid gap-3
-}
-
-.projectDescription {
-    @apply 
-    italic text-sm text-gray-400
-}
-
-.projectHeader, .projectStats {
-    @apply
-    grid grid-cols-12 items-center
-}
-
-.projectNum {
-    @apply
-    grid grid-cols-2 gap-3
-}
-
-.projectNumbold {
-    @apply
-    text-right font-bold text-xl text-color1-500 dark:text-color2-500
-}
-.projectText {
-    @apply
-    grid grid-cols-6 text-center
-}
-
 
 .teamCard {
     @apply

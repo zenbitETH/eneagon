@@ -1,6 +1,6 @@
 import Image from "next/image"
 import blank from "../../assets/memberBlank.svg"
-import badge from "../../assets/badges.svg"
+import badge from "../../assets/Badges.svg"
 import projects from "../../assets/projects.svg"
 import donado from "../../assets/donated.svg"
 

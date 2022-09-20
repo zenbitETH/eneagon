@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import Medal from '../assets/badges.svg'
+import Medal from '../assets/Badges.svg'
 
 export default function Toolbar() {
     return (
@@ -17,16 +17,6 @@ export default function Toolbar() {
               />
             </a>
           </Link>
-          <Link href='/projects'>
-            <a className='imageBG'>
-              <Image
-                src={Medal}
-                width={35}
-                height={35}
-                className="hover:regen-100 cursor-pointer"  
-              />
-            </a>
-          </Link>
           <Link href='/members'>
             <a className='imageBG'>
               <Image
@@ -37,8 +27,6 @@ export default function Toolbar() {
               />  
             </a>
           </Link>
-          
-
           <Link href='/stakeholders'>
             <a className='imageBG'>
             <Image
