@@ -108,11 +108,11 @@ h2 {
     text-white cursor-pointer
 }
 
-.card0, .projectsCard {
+.card0, .projectsCard, .newProjectCard {
     @apply
-    mx-24 py-5
+    mx-5 md:mx-24 py-5
     bg-glass-100 border-white border
-    w-full h-5/6 rounded-gen
+    w-full rounded-gen
     grid grid-rows-6 
     my-20 xl:my-0 h-[fit] xl:h-[80vh]
 }
