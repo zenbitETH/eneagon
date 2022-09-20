@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-export default function projects() {
+export default function projectDetail() {
     return (
     <div className='projectsCard'>
         <div className="projectHeader">

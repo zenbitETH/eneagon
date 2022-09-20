@@ -2,21 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-.projectsCard {
+.newProjectCard {
     @apply
-    px-5
+    grid-cols-3
+    px-5 gap-5 md
 }
 
 .newProject, .allProjects {
     @apply
-    rounded-gen
-    p-5
+    rounded-gen 
+    bg-backgrounds-500 dark:bg-backgrounds-400
+    p-5  h-fit
+    row-span-6
 }
 
 .newProject {
     @apply
     row-span-2 
     text-center
+    
 }
 
 .allProjects {

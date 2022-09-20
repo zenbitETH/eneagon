@@ -1,5 +1,6 @@
 import zen from "../../assets/zenbit.png"
 import Image from "next/image"
+import Link from "next/link"
 import donado from "../../assets/donated.svg"
 import badge from '../../assets/Badges.svg'
 
@@ -7,7 +8,9 @@ export default function Project () {
     return (
         <div className="projects">
         <div className="projectGrid">
-          <div className="projectNew">+ New project</div>
+          <Link href='/mintProject'>
+            <div className="projectNew">+ New project</div>
+          </Link>
           <div className="projectView">
             <div className="col-span-2">
               <Image src={zen} width={150} height={150}/>
