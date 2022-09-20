@@ -1,9 +1,9 @@
-export default function Project () {
+import Link from 'next/link'
+
+export default function projects() {
     return (
-        <div className="projects">
-        <div className="projectGrid">
-            <div className="hover:bg-color1-500 bg-color2-500 rounded-gen font-bold text-xl md:w-1/4 hover:text-white text-center cursor-pointer py-2">+ New project</div>
-            <div className="projectHeader">
+    <div className='projectsCard'>
+        <div className="projectHeader">
                 <div className="col-span-8">
                   <div className="font-bold text-xl">
                     Project Tittle / Stage
@@ -63,7 +63,6 @@ export default function Project () {
                 </div>
               </div>
           </div>
-        </div>
-      </div>
+    </div>
     )
 }
