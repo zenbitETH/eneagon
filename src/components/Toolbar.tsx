@@ -21,7 +21,7 @@ export default function Toolbar() {
               />
             </a>
           </Link>
-          <Link href='/'>
+          <Link href='/mintProject'>
             <a className='imageBG'>
               <Image
                 src={newPro}
