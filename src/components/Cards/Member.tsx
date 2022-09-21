@@ -6,7 +6,7 @@ export default function Members() {
       
       <div className="teamMembers">
           <div className="">
-          <h1 className="tabMembers ">Members</h1>
+          <h1 className="tabMembers ">Collaborators</h1>
           <div className="memberGrid">
             <div className="memberPhoto">
               <Image src={blank} height={50} width={50}/>

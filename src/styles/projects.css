@@ -57,6 +57,8 @@
     bg-backgrounds-500 dark:bg-backgrounds-400
 }
 
+
+
 .projectInfo {
     @apply
     text-left rounded-gen col-span-5 grid grid-cols-12

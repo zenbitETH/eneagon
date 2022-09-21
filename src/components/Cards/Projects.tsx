@@ -11,15 +11,15 @@ export default function Project () {
           <div className="projectView">
             <div className="col-span-6 grid-cols-6 grid items-center">
               <div className="col-span-2 ml-5"><Image src={zen} height={250} width={250}/></div>
-              <div className="grid col-span-4">
-                <div className="font-bold text-left text-color1-500 text-2xl px-5 ">
-                  Project Name <span className="mt-1 text-black text-base ml-3">ERC 1155</span>
-                  <div className="italic text-black text-base font-normal my-2">Type of project</div>
+              <div className="grid col-span-4 grid-cols-12 grid">
+                <div className="col-span-8 text-left pl-5">
+                  <div className="font-bold text-color1-500 text-2xl  ">Project Name</div>
+                  <div className="italic text-black text-base font-normal ">Type of project</div>
                 </div>
-                <div className="px-5 text-left mr-5">
-                  
-                  <div className="">🌱 <span className="italic">Stage 1</span></div>
-                </div>
+              <div className="col-span-4 font-bold">
+                <div className="mt-1 text-base">ERC 1155</div>
+                <div className=" ">🌱 <span className="italic ">Stage 1</span></div>
+              </div>
               </div>
             </div>
             <div className="projectInfo">

@@ -18,15 +18,15 @@ export default function Stakeholder() {
             <div className="stakeholderData">
               <div className="stakeholderName">Address / ENS / Lens</div>
               <div className="stakeholderStats">
-                <div className="grid grid-cols-2">
+                <div className="grid grid-cols-2 p-1 gap-2">
                   <Image src={badge} height={18} width={13}/>
                   <div>00</div>
                 </div>
-                <div className="grid grid-cols-2">
+                <div className="grid grid-cols-2 p-1 gap-2">
                   <Image src={projects} height={18} width={13}/>
                   <div>00</div>
                 </div>
-                <div className="grid grid-cols-2 ">
+                <div className="grid grid-cols-2 p-1 gap-2">
                   <Image src={donado} height={18} width={13}/>
                   <div>00</div>
                 </div>
