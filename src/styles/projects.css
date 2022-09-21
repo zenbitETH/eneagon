@@ -33,28 +33,33 @@
     @apply
     col-span-12 xl:col-span-6 2xl:col-span-7
     mx-5 xl:mx-0
-    bg-backgrounds-500 dark:bg-backgrounds-400
     rounded-gen
-    p-5 
+    
 }
 
 .projectGrid {
     @apply
     w-full
     grid gap-3 grid-cols-12
-    text-right
+    text-right relative
 }
 
 .projectNew {
     @apply
     hover:bg-color1-500 bg-color2-500 rounded-gen cursor-pointer 
     md:ml-auto py-2 px-5 col-span-12
-    font-bold text-xl hover:text-white text-center 
+    font-bold text-xl hover:text-white text-center absolute
 }
 
 .projectView {
     @apply 
-    col-span-6 text-center grid grid-cols-6
+    col-span-6 text-center grid grid-rows-2 rounded-gen pt-5
+    bg-backgrounds-500 dark:bg-backgrounds-400
+}
+
+.projectInfo {
+    @apply
+    text-left rounded-gen col-span-5 grid grid-cols-12
 }
 
 .projectDescription {
