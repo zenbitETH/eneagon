@@ -12,8 +12,8 @@ export default function Project () {
           <div className="col-span-2 ml-5"><Image src={zen} height={250} width={250}/></div>
           <div className="grid col-span-4 grid-cols-12 grid">
             <div className="col-span-8 text-left pl-5">
-              <div className="font-bold text-color1-500 text-2xl  ">Project Name</div>
-              <div className="italic text-black text-base font-normal ">Type of project</div>
+              <div className="projectName">Project Name</div>
+              <div className="italic text-base font-normal ">Type of project</div>
             </div>
           <div className="col-span-4 font-bold">
             <div className="mt-1 text-base">ERC 1155</div>
@@ -25,7 +25,7 @@ export default function Project () {
           <div className="col-span-12 mx-5  mb-2">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </div>
-          <div className="text-xl col-span-12 grid grid-cols-2 bg-color1-500 rounded-b-gen text-white">
+          <div className="projectFooter">
             <div className="grid grid-cols-2 p-1 items-center">
               <Image src={badge} height={23} width={18}/>
               <div className="text-left">00</div>

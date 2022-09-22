@@ -8,12 +8,51 @@
     px-5 gap-5
 }
 
-.newProject, .allProjects {
+.projectCard {
+    @apply
+    grid-cols-12
+    px-5 gap-5
+}
+
+
+.newProject, .allProjects, .projectMain, .projectFetch, .stageCard  {
     @apply
     rounded-gen 
     bg-backgrounds-500 dark:bg-backgrounds-400
-    p-5  h-fit
+    p-5  
+    
+}
+
+.projectMain, .projectStages {
+    @apply
     row-span-6
+}
+
+.newProject, .allProjects {
+    @apply
+    h-fit
+}
+
+.projectHolders, .projectStages {
+    @apply
+    row-span-6
+    grid  gap-5
+}
+
+.projectStages {
+    @apply
+    grid-rows-3
+}
+
+
+.projectMain {
+    @apply
+    col-span-6
+}
+
+.projectStages, .projectHolders {
+    @apply
+    col-span-3
 }
 
 .newProject {
@@ -61,12 +100,35 @@
     col-span-6 text-center grid grid-rows-2 rounded-gen pt-5
     bg-backgrounds-500 dark:bg-backgrounds-400 
 }
+.projectDetail {
+    @apply 
+    col-span-6 text-center grid grid-rows-5 rounded-gen pt-5 gap-5
+    bg-backgrounds-500 dark:bg-backgrounds-400 
+}
 
+.projectName {
+    @apply
+    font-bold text-color1-500 text-2xl dark:text-color2-500
+}
 
+.projectInfo, .projectDes {
+    @apply
+    text-justify rounded-gen  grid grid-cols-12
+}
 
 .projectInfo {
     @apply
-    text-left rounded-gen col-span-5 grid grid-cols-12
+    col-span-5
+}
+
+.projectDes {
+    @apply
+    col-span-12
+}
+
+.projectFooter {
+    @apply
+    text-xl col-span-12 grid grid-cols-2 dark:bg-color2-500 bg-color1-500 rounded-b-gen text-white 
 }
 
 .projectDescription {

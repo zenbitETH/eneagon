@@ -108,7 +108,7 @@ h2 {
     text-white cursor-pointer
 }
 
-.card0, .projectsCard, .newProjectCard {
+.card0, .projectCard, .newProjectCard {
     @apply
     mx-5 md:mx-24 py-5
     bg-glass-100 border-white border
