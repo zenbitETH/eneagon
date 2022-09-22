@@ -42,7 +42,7 @@
     fixed bottom-0 xl:grid-cols-1 xl:left-0 align-middle	
     w-full xl:w-20 xl:h-[80%]   xl:grid-rows-5 
     xl:py-52
-    xl:inset-y-0 xl:my-auto
+    xl:inset-y-0 xl:my-auto 
   }
 
   .imageBG {

@@ -128,7 +128,7 @@
 
 .projectFooter {
     @apply
-    text-xl col-span-12 grid grid-cols-2 dark:bg-color2-500 bg-color1-500 rounded-b-gen text-white 
+    text-xl col-span-12 grid grid-cols-3  rounded-b-gen text-backgrounds-400 items-center pb-3
 }
 
 .projectDescription {

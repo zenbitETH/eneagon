@@ -110,7 +110,7 @@ h2 {
 
 .card0, .projectCard, .newProjectCard {
     @apply
-    mx-5 md:mx-24 py-5
+    mx-5 md:mx-24 py-5 
     bg-glass-100 border-white border
     w-full rounded-gen
     grid grid-rows-6 
