@@ -14,8 +14,20 @@
     px-5 gap-5
 }
 
+.projectFetch {
+    @apply
+    p-5 rounded-gen
+    border-2 border-color1-500 dark:border-color2-500
+}
 
-.newProject, .allProjects, .projectMain, .projectFetch, .stageCard  {
+.stagesCard {
+    @apply
+    border-2 border-color1-500 dark:border-color2-500
+    p-5 rounded-gen grid grid-rows-6
+}
+
+
+.newProject, .allProjects, .projectMain  {
     @apply
     rounded-gen 
     bg-backgrounds-500 dark:bg-backgrounds-400
@@ -37,6 +49,8 @@
     @apply
     row-span-6
     grid  gap-5
+    bg-backgrounds-500 dark:bg-backgrounds-400
+    rounded-gen p-5
 }
 
 .projectStages {
