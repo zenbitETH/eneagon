@@ -30,7 +30,7 @@ export default function Stage2 () {
           <Image src={donado} height={23} width={18}/>
           <div className="text-left text-color1-500 col-span-3 font-medium">$00,000 </div>
         </div>
-        <div className='border border-color1-500 py-2 px-5 rounded-gen text-center font-medium text-color1-500'>
+        <div className='projectBT'>
           Donate now
         </div>
       </div>

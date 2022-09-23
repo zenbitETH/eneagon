@@ -108,6 +108,12 @@ h2 {
     text-white cursor-pointer
 }
 
+.projectBT {
+    @apply
+    border border-color1-500 py-1 px-5 rounded-gen text-center font-medium text-color1-500
+    cursor-pointer hover:bg-color1-500 hover:text-white
+}
+
 .card0, .projectCard, .newProjectCard {
     @apply
     mx-5 md:mx-24 py-5 
