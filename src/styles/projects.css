@@ -14,16 +14,26 @@
     px-5 gap-5
 }
 
+.projectFetch, .dataGrid {
+    @apply
+    p-5 rounded-xl grid  items-center 
+    border-2 border-color1-500 dark:border-color2-500
+}
+
 .projectFetch {
     @apply
-    p-5 rounded-gen
-    border-2 border-color1-500 dark:border-color2-500
+    grid-rows-6
+}
+
+.dataGrid {
+    @apply
+    grid-rows-3 w-full gap-5
 }
 
 .stagesCard {
     @apply
     border-2 border-color1-500 dark:border-color2-500
-    p-5 rounded-gen grid grid-rows-6
+    p-5 rounded-xl grid grid-rows-6
 }
 
 
@@ -48,6 +58,7 @@
 .projectHolders, .projectStages {
     @apply
     row-span-6
+    grid-rows-2
     grid  gap-5
     bg-backgrounds-500 dark:bg-backgrounds-400
     rounded-gen p-5
