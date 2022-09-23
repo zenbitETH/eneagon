@@ -44,7 +44,7 @@ module.exports = {
 				backgrounds: {
 					900: "#719CE4",//backgrounnd dark
 					800: "#2765cc",
-					700: "#b3caf1",
+					700: "#75C31D",
 					600: "#9E9E9E",//button
 					500: "#FAFAFA",//white
 					400: "#2D3134",

@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import Medal from '../assets/BadgesW.svg'
-import Book from '../assets/Repo.svg'
+import Book from '../assets/RepoW.svg'
 import Member from '../assets/memberW.svg'
 import homebt from '../assets/home.svg'
 import newPro from '../assets/projectPlus.svg'
@@ -21,7 +21,7 @@ export default function Toolbar() {
               />
             </a>
           </Link>
-          <Link href='/'>
+          <Link href='/mintProject'>
             <a className='imageBG'>
               <Image
                 src={newPro}

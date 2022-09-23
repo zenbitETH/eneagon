@@ -1,6 +1,6 @@
 import Users from "./Cards/Users"
 import Who from "./Cards/Who"
-import Projects from "./Cards/Projects"
+import Projects from "./Projects"
 
 export default function Dashboard() {
     return (
