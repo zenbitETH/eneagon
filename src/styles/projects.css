@@ -2,11 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.newProjectCard {
-    @apply
-    grid-cols-3
-    px-5 gap-5
-}
+
 
 .projectCard {
     @apply
