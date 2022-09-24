@@ -66,27 +66,27 @@ export default function Part4() {
             <div className='  w-4/5 mx-auto '>
                 <div className=''>
                     <div className='formLabel'>🪴 Stage 02 name</div>
-                    <input type='url' placeholder='Set a name for the Stage 1' className='pl-5 text-black w-full mx-auto rounded-dd placeholder:italic'></input>                    
+                    <input type='url' placeholder='Set a name for the Stage 1' className='pl-5 text-black w-full mx-auto rounded-dd placeholder:italic border-color1-500'></input>                    
                 </div>
                 
             </div>
             <div className='row-span-2 w-4/5 mx-auto'>
                 <div className='formLabel'>Description</div>
-                <textarea placeholder='Describe your project' className='p-5 text-black w-full mx-auto rounded-dd placeholder:italic h-full'></textarea>
+                <textarea placeholder='Describe your project' className='p-5 text-black w-full mx-auto rounded-dd placeholder:italic border-color1-500 h-full'></textarea>
             </div>
             <div className='pt-14  w-4/5 mx-auto '>
                 <div className=''>
                     <div className='formLabel'>Github milestone URL</div>
-                    <input type='url' placeholder='Use a Github milestone to track this stage' className='pl-5 text-black w-full mx-auto rounded-dd placeholder:italic'></input>                    
+                    <input type='url' placeholder='Use a Github milestone to track this stage' className='pl-5 text-black w-full mx-auto rounded-dd placeholder:italic border-color1-500'></input>                    
                 </div>
                 
             </div>
             
-            <div className='text-right w-4/5 my-auto mx-auto'>
+            {/*<div className='text-right w-4/5 my-auto mx-auto'>
                 <div className='px-10 py-3 hover bg-color1-500 w-fit ml-auto rounded-gen cursor-pointer text-white'>
                     Continue
                 </div>
-            </div>
+            </div>*/}
         </div>
     )
 }

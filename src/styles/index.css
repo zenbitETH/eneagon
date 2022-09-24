@@ -114,7 +114,7 @@ h2 {
     cursor-pointer hover:bg-color1-500 hover:text-white
 }
 
-.card0, .projectCard, .newProjectCard {
+.card0, .projectCard {
     @apply
     mx-5 md:mx-24 py-5 
     bg-glass-100 border-white border

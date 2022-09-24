@@ -108,11 +108,11 @@ export default function Part1() {
                 <div className='formLabel'>Description</div>
                 <textarea placeholder='Describe your project' className='p-5 text-black w-full mx-auto rounded-dd placeholder:italic h-full border-color1-500'></textarea>
             </div>
-            <div className='text-right w-4/5 my-auto pt-14 mx-auto'>
+            {/*<div className='text-right w-4/5 my-auto pt-14 mx-auto'>
                 <div className='px-10 py-3 hover bg-color1-500 w-fit ml-auto rounded-gen cursor-pointer text-white'>
                     Continue
                 </div>
-            </div>
+            </div>*/}
         </div>
     )
 }
