@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.newProjectCard {
+    @apply
+    px-5 gap-5
+    w-4/6
+    grid-rows-6
+}
+
+.formSection {
+    @apply
+    bg-backgrounds-500
+    h-full row-span-6
+    rounded-gen p-5 grid grid-rows-6
+}
+
+.formProgress {
+    @apply
+    w-4/5 mx-auto  my-4
+}
+
+.progressCircles {
+    @apply
+    w-10 h-10 mx-auto rounded-full text-lg  flex items-center text-center grid text-white font-bold
+}
+
+.progressBar {
+    @apply
+    w-1/6  items-center align-middle content-center flex
+}
+
+.barContainer {
+    @apply
+    w-full rounded items-center align-middle flex-1
+}
+
+.barBar {
+    @apply
+    text-xs leading-none py-1 text-center
+}
+
+.formLabel {
+    @apply
+    pb-2 font-bold text-color1-500
+}
+
+.formFile {
+    @apply
+    w-full bg-gray-50 rounded-lg border-2 border-color1-500 border-dashed cursor-pointer dark:hover:bg-gray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600 mr-10
+}

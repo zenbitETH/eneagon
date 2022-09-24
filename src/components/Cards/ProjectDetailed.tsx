@@ -27,7 +27,7 @@ export default function projectDetail () {
                   <div>Language</div>
                 </div>
                 <div className="flex space-x-2">
-                  <div className="bg-green-500 rounded-full p-1 my-auto"></div>
+                  <div className="bg-color1-500 rounded-full p-1 my-auto"></div>
                   <div>Language</div>
                 </div>
                 <div className="flex space-x-2">
