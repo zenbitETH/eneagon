@@ -78,11 +78,25 @@ export default function Part2 () {
                 </div>
                 <div className=''>
                     <div className='formLabel'>Type of contract</div>
-                    <input type='url' placeholder='Choose the type of contract' className='pl-5 text-black w-full mx-auto rounded-dd placeholder:italic'></input>
+                    <select className='pl-5 text-black w-full rounded-dd px-6 py-3 border-color1-500'>
+                        <option selected>Please select</option>
+                        <option>ERC20 token</option>
+                        <option>ERC721 NFT</option>
+                        <option>ERC1155 NFT</option>
+                        <option>Governance</option>
+                        <option>Custom</option>
+                    </select>
+
                 </div>
                 <div className=''>
                     <div className='formLabel'>Deployment network</div>
-                    <input type='url' placeholder='Choose where your contracts were deployed' className='pl-5 text-black w-full mx-auto rounded-dd placeholder:italic border-color1-500'></input>
+                    <select className='pl-5 text-black w-full rounded-dd px-6 py-3 border-color1-500'>
+                        <option selected>Please select</option>
+                        <option>Ethereum Mainnet</option>
+                        <option>Optimism</option>
+                        <option>Polygon</option>
+                        <option>Other</option>
+                    </select>
                 </div>
               
                 </div>
