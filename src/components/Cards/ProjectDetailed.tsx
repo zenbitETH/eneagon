@@ -48,7 +48,7 @@ export default function projectDetail () {
               <div className="col-span-12  mb-2">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </div>
-              <div className="grid grid-cols-5 col-span-12 mr-20. mt-2 ">
+              <div className="grid grid-cols-4 col-span-12 mr-20. mt-2 ">
                 <div className="grid grid-cols-2  items-center">
                   <Image src={stars} height={23} width={18}/>
                   <div className="text-left">00</div>
@@ -57,10 +57,7 @@ export default function projectDetail () {
                   <Image src={forks} height={23} width={18}/>
                   <div className="text-left">00</div>
                 </div>
-                <div className="grid grid-cols-2 items-center ">
-                  <Image src={down} height={23} width={18}/>
-                  <div className="text-left">00</div>
-                </div>
+
                 <Link href="/" >
                   <div className="cursor-pointer ml-auto text-right"><Webi/></div>
                 </Link>

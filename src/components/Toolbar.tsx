@@ -17,7 +17,7 @@ export default function Toolbar() {
                 src={homebt}
                 width={35}
                 height={35}
-                className="hover:regen-100 cursor-pointer"
+                className=" cursor-pointer"
               />
             </a>
           </Link>
@@ -27,7 +27,7 @@ export default function Toolbar() {
                 src={newPro}
                 width={35}
                 height={35}
-                className="hover:regen-100 cursor-pointer"
+                className=" cursor-pointer"
               />
             </a>
           </Link>
@@ -37,7 +37,7 @@ export default function Toolbar() {
               src={Medal}
               width={35}
               height={35}
-              className="hover:regen-100 cursor-pointer"
+              className="cursor-pointer"
             />
             </a>
           </Link>
@@ -47,7 +47,7 @@ export default function Toolbar() {
                 src={Book}
                 width={35}
                 height={35}
-                className="hover:regen-100 cursor-pointer"
+                className=" cursor-pointer"
               />  
             </a>
           </Link>

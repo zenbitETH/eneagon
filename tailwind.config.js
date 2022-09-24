@@ -12,6 +12,9 @@ module.exports = {
 	},
 	theme: {
 		extend: {
+			backgroundImage: {
+				'gradient-radial': 'radial-gradient(var(--gradient-color-stops))',
+			  },
 			maxHeight: {
 				'half': '50%',
 			  },
@@ -73,7 +76,7 @@ module.exports = {
 					500: "#72e48080",
 					400: "#ffffff75",
 					300: "#ffffff25",
-					200: "#4356DA80",
+					200: "#4356DA90",
 					100: "#FFFFFF50",//glass light
 				},
 

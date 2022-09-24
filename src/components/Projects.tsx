@@ -12,7 +12,7 @@ export default function Projects () {
         
           <Link href="/mintProject">
             <div className="addProject">
-              <span>Add Project <span><Image src={proPlus} height={50} width={50}/></span></span>
+              <span>+ Add Project </span>
             </div>
           </Link>
         </div>
