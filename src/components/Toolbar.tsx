@@ -31,16 +31,6 @@ export default function Toolbar() {
               />
             </a>
           </Link>
-          <Link href='/members'>
-            <a className='imageBG'>
-              <Image
-                src={Member}
-                width={35}
-                height={35}
-                className="hover:regen-100 cursor-pointer"
-              />  
-            </a>
-          </Link>
           <Link href='/stakeholders'>
             <a className='imageBG'>
             <Image
@@ -51,7 +41,7 @@ export default function Toolbar() {
             />
             </a>
           </Link>
-          <Link href='/'>
+          <Link href='https://ethglobal.com/showcase/eneagon-0hf0o'>
             <a className='imageBG'>
               <Image
                 src={Book}

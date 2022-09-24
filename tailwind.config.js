@@ -89,7 +89,7 @@ module.exports = {
 			  },
 			borderRadius: {
 				'dc': '12px',
-				'lg': '25px',
+				'dd': '22px',
 				'gen': '32px',
 				'med': '20px',
 				'but': '52px',
