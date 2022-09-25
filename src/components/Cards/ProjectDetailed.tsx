@@ -2,7 +2,6 @@ import zen from "../../assets/zenbit.png"
 import Image from "next/image"
 import stars from '../../assets/star.svg'
 import forks from '../../assets/fork.svg'
-import down from '../../assets/download.svg'
 import Link from "next/link"
 import member from '../../assets/memberBlank.svg'
 import Webi from '@/components/SVG/web'
@@ -18,7 +17,7 @@ export default function projectDetail () {
             
             <div className="col-span-12 text-left">
               <div className="projectName">Project Name</div>
-              <div className="italic text-base font-normal ">Type of project • <span>ERC 1155</span></div>
+              <div className="italic text-base font-normal ">Type of project </div>
               
             </div>
             <div className="grid gap-5 text-sm col-span-12 grid-cols-5 items-center">
@@ -84,7 +83,11 @@ export default function projectDetail () {
         </div>
         <div className="grid gap-5 col-span-6  text-left  row-span-2">
           <div className="rounded-gen grid grid-rows-6 p-5">
-            <div className="row-span-1 text-color1-500 dark:text-color2-500 font-bold"><span>8 </span> Collectors / Token Holders</div>
+            <div className="row-span-1 grid grid-cols-2 text-color1-500 dark:text-color2-500 font-bold">
+              <div><span>8 </span> Collectors / Token Holders</div>
+              <div className="text-right font-normal text-gray-500">ERC1155 <span>• Mumbai Testnet</span></div>
+            </div>
+              
             <div className="row-span-5 grid items-center grid-cols-4">
               <div><Image src={member} height={30} width={30}/><span className="ml-5">address.eth</span></div>
               <div><Image src={member} height={30} width={30}/><span className="ml-5">0x1234...abcd</span></div>
