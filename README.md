@@ -17,12 +17,9 @@ Eneagon was built with a next.js app, it integrates ENS to identify ethereum add
 
 
 ## Contracts
-- [Project NFT on Optimism testnet] (https://blockscout.com/optimism/goerli/address/0xfa343B1755a7197B2164B8cA55CF425AEE6C6efA
-)  
-- [Project NFT on Polygon testnet] (https://mumbai.polygonscan.com/address/0xba7fcaff6b3304e419acaaefb2c06aa9f96713a3
-)  
-- [Soulbounded Badge on Optimism testnet](https://goerli.etherscan.io/address/0x8d462aa25b12D7C3be7E3D5e13F579c914ABEe8B
-)  
+- [Project NFT on Optimism testnet](https://blockscout.com/optimism/goerli/address/0xfa343B1755a7197B2164B8cA55CF425AEE6C6efA)  
+- [Project NFT on Polygon testnet](https://mumbai.polygonscan.com/address/0xba7fcaff6b3304e419acaaefb2c06aa9f96713a3)  
+- [Soulbounded Badge on Optimism testnet](https://goerli.etherscan.io/address/0x8d462aa25b12D7C3be7E3D5e13F579c914ABEe8B)  
 - [Soulbounded Badge on Polygon testnet](https://mumbai.polygonscan.com/address/0x7B688c975161b3bd42Dec27472e02C5636f308C4#code)  
 
 
