@@ -22,47 +22,54 @@ export default function projectDetail() {
             <div className='text-center'>
               <div className="flex mb-2 items-center justify-between">
                 <div>
-                  <span className="text-backgrounds-900 font-bold ">
-                    $00,000
+                  <span className="text-color1-500 font-bold ">
+                    $00,000 <span className='font-normal'>(% 00.00)</span>
                   </span>
                 </div>
                 <div className="text-right">
-                  <span className="font-semibold inline-block text-color1-500">
+                  <span className="font-semibold inline-block text-gray-500">
                     $00,000
                   </span>
                 </div>
               </div>
               <div className="overflow-hidden h-3 mb-2 text-xs flex items-center bg-gray-300 rounded-gen ">
-                <div style={{ width: "5%" }} className="shadow-none flex flex-col text-center h-1.5 ml-1 mr-1 rounded-full text-white justify-center bg-color1-500"></div>
+                <div style={{ width: "0%" }} className="shadow-none flex flex-col text-center h-1.5 ml-1 mr-1 rounded-full text-white justify-center bg-color1-500"></div>
               </div>
-              <div className="text-left">
-                  <span className="font-semibold inline-block text-backgrounds-900">
-                    05.00%
+              <div className='grid grid-cols-2'>
+                <div className="text-left">
+                  <span className="text-sm inline-block text-color1-500">
+                    Your share
                   </span>
                 </div>
+                <div className="text-right">
+                  <span className="text-sm inline-block text-gray-500">
+                    Total
+                  </span>
+                </div>
+              </div>
             </div>
           </div> 
           <div className='grid grid-cols-3 text-xl items-center gap-5'>
-            <div className='font-bold text-lg col-span-3'>Staked Badges</div>
+            <div className='font-bold text-lg col-span-3'>Soulbound badges minted</div>
             <div className='text-center'>
-              🌱 <span className='italic'>25</span>
+              🌱 <span className='italic'>4</span>
             </div>
             <div className='text-center'>
-              🪴 <span className='italic'>25</span>
+              🪴 <span className='italic'>0</span>
             </div>
             <div className='text-center'>
-              🌳 <span className='italic'>25</span>
+              🌳 <span className='italic'>0</span>
             </div>
           </div> 
           <div className='grid grid-cols-2 text-xl items-center gap-5'>
-            <div className='font-bold text-lg col-span-2'>Stakeholders</div>
+            <div className='font-bold text-lg col-span-2'>Unique stakeholders / humans</div>
             <div className="grid grid-cols-2 p-1 items-center">
               <Image src={SH} height={32} width={32}/>
-              <div className="text-left">00</div>
+              <div className="text-left">04</div>
             </div>
             <div className="grid grid-cols-2 p-1 items-center">
               <Image src={WDC} height={32} width={32}/>
-              <div className="text-left">00</div>
+              <div className="text-left">01</div>
             </div>
           </div> 
           
@@ -84,9 +91,10 @@ export default function projectDetail() {
             </div>
           </div>
           <div className='text-center'>
-            <div>Stage 02 🪴</div>
+            <div>Stage 01 🌱</div>
             <Link href="/"><div className='text-color1-500 italic cursor-pointer font-bold underline underline-offset-4 '>Rewards</div></Link>
           </div>
+          <div className='projectBT'>Mint 🌱 SB Badge </div>
         </div>  
       </div>
       <div className='projectStages'>

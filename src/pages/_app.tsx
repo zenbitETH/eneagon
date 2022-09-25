@@ -2,6 +2,7 @@ import '../styles/index.css'
 import '../styles/header.css'
 import '../styles/projects.css'
 import '../styles/form.css'
+import '../styles/donate.css'
 import { ThemeProvider } from 'next-themes'
 import Web3Provider from '@/components/Web3Provider'
 import Header from '@/components/Header'; 

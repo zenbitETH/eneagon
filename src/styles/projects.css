@@ -10,6 +10,18 @@
     px-5 gap-5
 }
 
+.projectBT {
+    @apply
+    border border-color1-500 py-1 px-5 rounded-gen text-center font-medium text-color1-500
+    cursor-pointer hover:bg-color1-500 hover:text-white
+}
+
+.buttonBlocked {
+    @apply
+    bg-gray-500 border border-color1-500 py-1 px-5 rounded-gen text-center font-medium text-white
+    cursor-not-allowed  hover:text-white
+}
+
 .projectFetch, .dataGrid {
     @apply
     p-5 rounded-xl grid  items-center 
