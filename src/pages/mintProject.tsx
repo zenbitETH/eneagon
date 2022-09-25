@@ -7,6 +7,10 @@ import Part5 from "@/components/Form/Part5"
 export default function mintProject() {
     return (
         <div className='newProjectCard'>
+            <Part1/>
+            <Part2/>
+            <Part3/>
+            <Part4/>
             <Part5/>    
         </div>
     )

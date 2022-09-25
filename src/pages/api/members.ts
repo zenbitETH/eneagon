@@ -7,11 +7,16 @@ const octokit = new Octokit({
 })
 
 const handler = async (req: NextApiRequest, res: NextApiResponse) => {
-    const result = await octokit.request("GET /orgs/{org}/members", {
+    
+    if (req.method === "POST") {
+        
+    } else {
+        const result = await octokit.request("GET /orgs/{org}/members", {
         org: "zenbitETH",
-    })
+        })
+        res.status(200).json( result )
+    }
 
-    res.status(200).json( result )
 }
 
 export default handler

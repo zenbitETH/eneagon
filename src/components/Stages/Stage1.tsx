@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 import donado from "../../assets/donatedP.svg"
 
 export default function Stage1 () {
@@ -28,11 +29,13 @@ export default function Stage1 () {
       <div className='grid grid-cols-2'>
       <div className="grid grid-cols-4 p-1 items-center ">
           <Image src={donado} height={23} width={18}/>
-          <div className="text-left text-color1-500 col-span-3 font-medium">$00,000 </div>
+          <div className="text-left text-color1-500 col-span-3 font-medium">$01,000 </div>
         </div>
-        <div className='projectBT'>
-          Donate now
-        </div>
+        <Link href='/donate'>
+          <div className='projectBT'>
+            Donate now
+          </div>
+        </Link>
       </div>
     </div>
     )

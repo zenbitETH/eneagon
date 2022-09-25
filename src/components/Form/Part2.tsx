@@ -66,33 +66,47 @@ export default function Part2 () {
             <div className="row-span-4 grid grid-rows-5 w-4/5 mx-auto gap-16">
                 <div className=''>
                     <div className='formLabel'>Web/Demo</div>
-                    <input type='url' placeholder='Paste your project URL' className='pl-5 text-black w-full mx-auto rounded-dd placeholder:italic'></input>
+                    <input type='url' placeholder='Paste your project URL' className='pl-5 text-black w-full mx-auto rounded-dd placeholder:italic border-color1-500'></input>
                 </div>
                 <div className=''>
                     <div className='formLabel'>Github repo url</div>
-                    <input type='url' placeholder='Paste the repository URL for the project' className='pl-5 text-black w-full mx-auto rounded-dd placeholder:italic'></input>
+                    <input type='url' placeholder='Paste the repository URL for the project' className='pl-5 text-black w-full mx-auto rounded-dd placeholder:italic border-color1-500'></input>
                 </div>
                 <div className=''>
                     <div className='formLabel'>Main contract address</div>
-                    <input type='url' placeholder='Paste the deployed contract address' className='pl-5 text-black w-full mx-auto rounded-dd placeholder:italic'></input>
+                    <input type='url' placeholder='Paste the deployed contract address' className='pl-5 text-black w-full mx-auto rounded-dd placeholder:italic border-color1-500'></input>
                 </div>
                 <div className=''>
                     <div className='formLabel'>Type of contract</div>
-                    <input type='url' placeholder='Choose the type of contract' className='pl-5 text-black w-full mx-auto rounded-dd placeholder:italic'></input>
+                    <select className='pl-5 text-black w-full rounded-dd px-6 py-3 border-color1-500'>
+                        <option selected>Please select</option>
+                        <option>ERC20 token</option>
+                        <option>ERC721 NFT</option>
+                        <option>ERC1155 NFT</option>
+                        <option>Governance</option>
+                        <option>Custom</option>
+                    </select>
+
                 </div>
                 <div className=''>
                     <div className='formLabel'>Deployment network</div>
-                    <input type='url' placeholder='Choose where your contracts were deployed' className='pl-5 text-black w-full mx-auto rounded-dd placeholder:italic'></input>
+                    <select className='pl-5 text-black w-full rounded-dd px-6 py-3 border-color1-500'>
+                        <option selected>Please select</option>
+                        <option>Ethereum Mainnet</option>
+                        <option>Optimism</option>
+                        <option>Polygon</option>
+                        <option>Other</option>
+                    </select>
                 </div>
               
                 </div>
     
 
-            <div className='text-right w-4/5 my-auto pt-14 mx-auto'>
+            {/*<div className='text-right w-4/5 my-auto pt-14 mx-auto'>
                 <div className='px-10 py-3 hover bg-color1-500 w-fit ml-auto rounded-gen cursor-pointer text-white'>
                     Continue
                 </div>
-            </div>
+            </div>*/}
         </div>
     )
 }

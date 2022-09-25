@@ -10,17 +10,17 @@ export default function Stage2 () {
         <div className="flex mb-2 items-center justify-between">
           <div>
             <span className="text-backgrounds-700 font-bold ">
-              05 / 35 tasks
+              0 / 5 issues
             </span>
           </div>
           <div className="text-right">
             <span className="font-semibold inline-block text-backgrounds-700">
-              14%
+              0%
             </span>
           </div>
         </div>
         <div className="overflow-hidden h-3 mb-4 text-xs flex items-center bg-gray-300 rounded-gen ">
-          <div style={{ width: "14%" }} className="shadow-none flex flex-col text-center h-1.5 ml-1 mr-1 rounded-full text-white justify-center bg-backgrounds-700"></div>
+          <div style={{ width: "0%" }} className="shadow-none flex flex-col text-center h-1.5 ml-1 mr-1 rounded-full text-white justify-center bg-backgrounds-700"></div>
         </div>
       </div>
         
@@ -30,9 +30,9 @@ export default function Stage2 () {
           <Image src={donado} height={23} width={18}/>
           <div className="text-left text-color1-500 col-span-3 font-medium">$00,000 </div>
         </div>
-        <div className='projectBT'>
-          Donate now
-        </div>
+        <button className='buttonBlocked'>
+          No🪴SB badge
+        </button>
       </div>
     </div>
     )
