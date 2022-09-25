@@ -4,7 +4,7 @@
 
 .header {
     @apply
-    fixed top-0 w-full px-5 sm:px-10 py-2.5 rounded bg-transparent my-3
+    fixed top-0 w-full px-5 sm:px-24 py-2.5 rounded bg-transparent my-3
 }
 
 .wrap {
@@ -29,7 +29,27 @@
 
 .menuItem {
     @apply 
-    py-2 px-4 md:p-0 text-xl font-thin
+    py-2 px-4 md:p-0 text-xl font-thin text-backgrounds-400 dark:text-white font-medium
     hover:text-color1-500 cursor-pointer
     active:text-color1-500
 }
+
+
+.toolbar {
+    @apply
+    grid grid-cols-5 
+    bg-glass-300 items-center border-white xl:border-r border-y xl:rounded-r-gen
+    fixed bottom-0 xl:grid-cols-1 xl:left-0 align-middle	
+    w-full xl:w-20 xl:h-[80%]   xl:grid-rows-4 
+    xl:py-32
+    xl:inset-y-0 xl:my-auto 
+  }
+
+  .imageBG {
+    @apply
+    h-14 w-14 p-3 cursor-pointer rounded-full
+    hover:bg-color1-500 focus:bg-color1-500  
+    dark:hover:bg-color2-500 dark:focus:bg-color2-500 
+    text-center grid mx-auto
+    
+  }

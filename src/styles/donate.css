@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.donateCard, .leaderboard {
+    @apply 
+    p-5
+    bg-backgrounds-500 dark:bg-backgrounds-400
+    h-full overflow-auto
+    col-span-12 row-span-6 rounded-dd grid 
+}
+
+.donateCard {
+    @apply 
+    grid-rows-2
+}
+
+.leaderCol {
+    @apply
+    font-bold
+    text-left
+}

@@ -7,12 +7,14 @@ const octokit = new Octokit({
 })
 
 const handler = async (req: NextApiRequest, res: NextApiResponse) => {
-    const result = await octokit.request("GET /repos/{owner}/{repo}/stats/contributors", {
-        owner: "zenbiteth",
-        repo:"Bright-Forest"
+    const {url} = req.body
+    const [,,,owner, repo] = url.split("/");
+    const result = await octokit.request("GET /repos/{owner}/{repo}/contributors", {
+        owner:owner,
+        repo:repo
     })
-
-    res.status(200).json( result )
+    const contributors = result.data.map(x => ({name:x.login, url:x.url}))
+    res.status(200).json( contributors )
 }
 
 export default handler

@@ -12,13 +12,16 @@ module.exports = {
 	},
 	theme: {
 		extend: {
+			backgroundImage: {
+				'gradient-radial': 'radial-gradient(var(--gradient-color-stops))',
+			  },
 			maxHeight: {
 				'half': '50%',
 			  },
 			colors: {
 				display: ["group-hover"],
 				color1: {
-				  900: "#0b113a",
+				  900: "#51157C",
 				  800: "#18257b",
 				  600: "#2233ad",
 				  700: "#3347d7",
@@ -30,7 +33,7 @@ module.exports = {
 			  },
 			
 				color2: {
-				  900: "#49150e",
+				  900: "#894D44",
 				  800: "#7a2417",
 				  700: "#d74530",
 				  600: "#de6251",
@@ -44,10 +47,10 @@ module.exports = {
 				backgrounds: {
 					900: "#719CE4",//backgrounnd dark
 					800: "#2765cc",
-					700: "#b3caf1",
+					700: "#75C31D",
 					600: "#9E9E9E",//button
 					500: "#FAFAFA",//white
-					400: "#1d133e",
+					400: "#2D3134",
 					300: "#5538b5",
 					200: "#cec5ed",
 					100: "#A898DF",//background light
@@ -73,7 +76,7 @@ module.exports = {
 					500: "#72e48080",
 					400: "#ffffff75",
 					300: "#ffffff25",
-					200: "#4356DA80",
+					200: "#4356DA90",
 					100: "#FFFFFF50",//glass light
 				},
 
@@ -89,7 +92,7 @@ module.exports = {
 			  },
 			borderRadius: {
 				'dc': '12px',
-				'lg': '25px',
+				'dd': '22px',
 				'gen': '32px',
 				'med': '20px',
 				'but': '52px',
@@ -103,4 +106,9 @@ module.exports = {
 			},
 		},
 	},
+	plugins: [
+		require('@tailwindcss/forms'),
+		require('tailwind-scrollbar-hide'),
+		// ...
+	  ],
   };

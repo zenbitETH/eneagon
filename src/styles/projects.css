@@ -2,25 +2,191 @@
 @tailwind components;
 @tailwind utilities;
 
-.projectsCard {
+
+
+.projectCard {
     @apply
-    px-5
+    grid-cols-12
+    px-5 gap-5
+}
+
+.projectBT {
+    @apply
+    border border-color1-500 dark:border-color2-500 py-1 px-5 rounded-gen text-center font-medium text-color1-500 dark:text-color2-500
+    cursor-pointer hover:bg-color1-500 dark:hover:bg-color2-500 hover:text-white dark:hover:text-white
+}
+
+.buttonBlocked {
+    @apply
+    bg-gray-500 border border-gray-500 py-1 px-5 rounded-gen text-center font-medium text-white
+    cursor-not-allowed  hover:text-white
+}
+
+.projectFetch, .dataGrid {
+    @apply
+    p-5 rounded-xl grid  items-center 
+    border-2 border-color1-500 dark:border-color2-500
+}
+
+.projectFetch {
+    @apply
+    grid-rows-6
+}
+
+.dataGrid {
+    @apply
+    grid-rows-3 w-full gap-5
+}
+
+.stagesCard {
+    @apply
+    border-2 border-color1-500 dark:border-color2-500
+    p-5 rounded-xl grid grid-rows-6
+}
+
+
+.newProject, .allProjects, .projectMain  {
+    @apply
+    rounded-gen 
+    bg-backgrounds-500 dark:bg-backgrounds-400
+    p-5  
+    
+}
+
+.projectMain, .projectStages {
+    @apply
+    row-span-6
 }
 
 .newProject, .allProjects {
     @apply
-    rounded-gen
-    p-5
+    h-fit
+}
+
+.projectHolders, .projectStages {
+    @apply
+    row-span-6
+    grid-rows-2
+    grid  gap-5
+    bg-backgrounds-500 dark:bg-backgrounds-400
+    rounded-gen p-5
+}
+
+.projectStages {
+    @apply
+    grid-rows-3
+}
+
+
+.projectMain {
+    @apply
+    col-span-6
+}
+
+.projectStages, .projectHolders {
+    @apply
+    col-span-3
 }
 
 .newProject {
     @apply
     row-span-2 
     text-center
+    
 }
 
 .allProjects {
     @apply
     row-span-4
     bg-backgrounds-500
+}
+
+.projects {
+    @apply
+    col-span-12 xl:col-span-6 2xl:col-span-7
+    mx-5 xl:mx-0
+    rounded-gen h-[100%]
+    overflow-auto scrollbar-hide
+}
+
+.projectGrid {
+    @apply
+    w-full
+    grid gap-5 grid-cols-12 grid-rows-2
+    text-right relative
+}
+
+.addProject {
+    @apply 
+    border-dashed border-2 border-color1-500 dark:border-color2-500 
+    rounded-gen p-5 col-span-6 grid text-center items-center text-3xl font-bold 
+    text-color1-500 dark:text-color2-500 cursor-pointer hover:bg-color1-500 dark:hover:bg-color2-500 
+    hover:animate-pulse hover:text-white dark:hover:text-white
+}
+
+.projectNew {
+    @apply
+    hover:bg-color1-500 bg-color2-500 rounded-gen cursor-pointer 
+    md:ml-auto py-2 px-5 col-span-12
+    font-bold text-xl hover:text-white text-center absolute
+}
+
+.projectView {
+    @apply 
+    col-span-6 text-center grid grid-rows-2 rounded-gen pt-5
+    bg-backgrounds-500 dark:bg-backgrounds-400 
+}
+.projectDetail {
+    @apply 
+    col-span-6 text-center grid grid-rows-5 rounded-gen pt-5 gap-5
+    bg-backgrounds-500 dark:bg-backgrounds-400 
+}
+
+.projectName {
+    @apply
+    font-bold text-color1-500 text-2xl dark:text-color2-500
+}
+
+.projectInfo, .projectDes {
+    @apply
+    text-justify rounded-gen  grid grid-cols-12
+}
+
+.projectInfo {
+    @apply
+    col-span-5
+}
+
+.projectDes {
+    @apply
+    col-span-12
+}
+
+.projectFooter {
+    @apply
+    text-xl col-span-12 grid grid-cols-3  rounded-b-gen  items-center pb-3
+}
+
+.projectDescription {
+    @apply 
+    italic text-sm text-gray-400
+}
+
+.projectHeader, .projectStats {
+    @apply
+    grid grid-cols-12 items-center
+}
+
+.projectNum {
+    @apply
+    grid grid-cols-2 gap-3
+}
+
+.projectNumbold {
+    @apply
+    text-right font-bold text-xl text-color1-500 dark:text-color2-500
+}
+.projectText {
+    @apply
+    grid grid-cols-6 text-center
 }

@@ -1,17 +1,13 @@
 import Users from "./Cards/Users"
-import Members from "./Cards/Members"
-
+import Who from "./Cards/Who"
+import Projects from "./Projects"
 
 export default function Dashboard() {
     return (
        <div className="card0">
         <Users/>
-        <div className="projects">
-          <div className="projectGrid">
-            
-          </div>
-        </div>
-        <Members/>    
+        <Projects/>
+        <Who/>    
        </div>
     )
 }

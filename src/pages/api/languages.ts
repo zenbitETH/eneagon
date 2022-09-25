@@ -7,12 +7,15 @@ const octokit = new Octokit({
 })
 
 const handler = async (req: NextApiRequest, res: NextApiResponse) => {
+    const {url} = req.body
+    const [,,,owner, repo] = url.split("/");
     const result = await octokit.request("GET /repos/{owner}/{repo}/languages", {
-        owner: "zenbitETH",
-        repo: "Bright-Forest"
+        owner:owner,
+        repo:repo
     })
-
-    res.status(200).json( result )
+    
+    const languages = Object.keys(result.data)
+    res.status(200).json( languages )
 }
 
 export default handler
