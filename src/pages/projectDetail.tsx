@@ -1,12 +1,12 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import SB from '../assets/sbadge.svg'
-import SH from '../assets/BadgesP.svg'
 import WDC from '../assets/wcn.svg'
 import Detail from '@/components/Cards/ProjectDetailed'
 import Stage1 from '@/components/Stages/Stage1'
 import Stage2 from '@/components/Stages/Stage2'
 import Stage3 from '@/components/Stages/Stage3'
+import Sbadges from '@/components/SVG/Sbadges'
 
 
 export default function projectDetail() {
@@ -22,7 +22,7 @@ export default function projectDetail() {
             <div className='text-center'>
               <div className="flex mb-2 items-center justify-between">
                 <div>
-                  <span className="text-color1-500 font-bold ">
+                  <span className="text-color1-500 dark:text-color2-500 font-bold ">
                     $00,000 <span className='font-normal'>(% 00.00)</span>
                   </span>
                 </div>
@@ -33,11 +33,11 @@ export default function projectDetail() {
                 </div>
               </div>
               <div className="overflow-hidden h-3 mb-2 text-xs flex items-center bg-gray-300 rounded-gen ">
-                <div style={{ width: "0%" }} className="shadow-none flex flex-col text-center h-1.5 ml-1 mr-1 rounded-full text-white justify-center bg-color1-500"></div>
+                <div style={{ width: "0%" }} className="shadow-none flex flex-col text-center h-1.5 ml-1 mr-1 rounded-full text-white justify-center bg-color1-500 dark:bg-color2-500"></div>
               </div>
               <div className='grid grid-cols-2'>
                 <div className="text-left">
-                  <span className="text-sm inline-block text-color1-500">
+                  <span className="text-sm inline-block text-color1-500 dark:text-color2-500">
                     Your share
                   </span>
                 </div>
@@ -64,7 +64,7 @@ export default function projectDetail() {
           <div className='grid grid-cols-2 text-xl items-center gap-5'>
             <div className='font-bold text-lg col-span-2'>Unique stakeholders / humans</div>
             <div className="grid grid-cols-2 p-1 items-center">
-              <Image src={SH} height={32} width={32}/>
+              <Sbadges/>
               <div className="text-left">04</div>
             </div>
             <div className="grid grid-cols-2 p-1 items-center">
@@ -92,7 +92,7 @@ export default function projectDetail() {
           </div>
           <div className='text-center'>
             <div>Stage 01 🌱</div>
-            <Link href="/"><div className='text-color1-500 italic cursor-pointer font-bold underline underline-offset-4 '>Rewards</div></Link>
+            <Link href="/"><div className='text-color1-500 dark:text-color2-500 italic cursor-pointer font-bold underline underline-offset-4 '>Rewards</div></Link>
           </div>
           <div className='projectBT'>Mint 🌱 SB Badge </div>
         </div>  

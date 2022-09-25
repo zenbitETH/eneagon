@@ -58,7 +58,7 @@ export default function Project () {
             {/* <button onClick={getRepo}>API</button> */}
           </div>
           <Link href="/projectDetail">
-            <div className="text-color1-500 cursor-pointer hover:animate-pulse text-right pr-5">Show more </div>
+            <div className="text-color1-500 dark:text-color2-500 cursor-pointer hover:animate-pulse text-right pr-5">Show more </div>
           </Link>
         </div>
       </div>

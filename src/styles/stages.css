@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.stageFunded {
+    @apply
+    text-left text-color1-500 dark:text-color2-500 col-span-3 font-medium
+}

@@ -42,7 +42,7 @@ export default function Part1() {
                     </div>
                 </div>
                 <div className="grid mx-5 pl-2 grid-cols-5 text-center text-sm ">
-                    <div className="font-bold underline underline-offset-4 text-color1-500">
+                    <div className="font-bold underline underline-offset-4 text-color1-500 dark:text-color2-500">
                         New project
                     </div>
 

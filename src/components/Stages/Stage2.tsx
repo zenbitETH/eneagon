@@ -1,5 +1,4 @@
-import Image from "next/image"
-import donado from "../../assets/donatedP.svg"
+import Fund from "../SVG/fund"
 
 export default function Stage2 () {
     return (
@@ -27,8 +26,8 @@ export default function Stage2 () {
       <div className='row-span-2 text-sm font leading-none text-justify'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam. </div>
       <div className='grid grid-cols-2'>
       <div className="grid grid-cols-4 p-1 items-center ">
-          <Image src={donado} height={23} width={18}/>
-          <div className="text-left text-color1-500 col-span-3 font-medium">$00,000 </div>
+          <Fund/>
+          <div className="stageFunded">$00,000 </div>
         </div>
         <button className='buttonBlocked'>
           No🪴SB badge
