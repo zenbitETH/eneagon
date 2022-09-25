@@ -5,11 +5,11 @@ export default function Part2 () {
                 <div className="formProgress">	
                     <div className="flex ">
                         <div className="flex-1">
-                            <div className="progressCircles bg-color1-500">✓</div>
+                            <div className="progressCircles bg-color1-500 dark:bg-color2-500">✓</div>
                         </div>
                         <div className="progressBar">
                             <div className="barContainer">
-                                <div className="barBar bg-color1-500"></div>
+                                <div className="barBar bg-color1-500 dark:bg-color2-500"></div>
                             </div>
                         </div>
                         <div className="flex-1">
@@ -42,11 +42,11 @@ export default function Part2 () {
                     </div>
                 </div>
                 <div className="grid mx-5 pl-2 grid-cols-5 text-center text-sm ">
-                    <div className="font-bold text-color1-500">
+                    <div className="barPhase">
                         New project
                     </div>
 
-                    <div className="font-bold underline underline-offset-4 text-color1-500">
+                    <div className="barPhase underline underline-offset-4">
                         URLs
                     </div>
 

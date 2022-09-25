@@ -9,6 +9,7 @@ export default function Projects () {
         <div className="projectGrid">
           
           <Project/>
+
         
           <Link href="/mintProject">
             <div className="addProject">

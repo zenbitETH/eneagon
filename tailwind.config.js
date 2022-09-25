@@ -21,7 +21,7 @@ module.exports = {
 			colors: {
 				display: ["group-hover"],
 				color1: {
-				  900: "#283483",
+				  900: "#51157C",
 				  800: "#18257b",
 				  600: "#2233ad",
 				  700: "#3347d7",
@@ -108,6 +108,7 @@ module.exports = {
 	},
 	plugins: [
 		require('@tailwindcss/forms'),
+		require('tailwind-scrollbar-hide'),
 		// ...
 	  ],
   };

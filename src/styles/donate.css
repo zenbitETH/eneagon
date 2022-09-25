@@ -2,10 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-.donateCard {
+.donateCard, .leaderboard {
     @apply 
     p-5
-    bg-backgrounds-500
-    h-full
-    col-span-12 row-span-6 rounded-gen grid grid-rows-2
+    bg-backgrounds-500 dark:bg-backgrounds-400
+    h-full overflow-auto
+    col-span-12 row-span-6 rounded-dd grid 
+}
+
+.donateCard {
+    @apply 
+    grid-rows-2
+}
+
+.leaderCol {
+    @apply
+    font-bold
+    text-left
 }

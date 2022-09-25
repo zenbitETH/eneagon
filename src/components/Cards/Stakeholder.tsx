@@ -34,6 +34,7 @@ export default function Stakeholder() {
             </div>
             <div className="col-span-12 border-b"/>
           </div>
+          
         </div>
       </div>
     )

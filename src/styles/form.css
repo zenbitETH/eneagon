@@ -22,7 +22,7 @@
 
 .formSection {
     @apply
-    bg-backgrounds-500
+    bg-backgrounds-500 dark:bg-backgrounds-400
     h-full row-span-6 col-span-5
     rounded-gen p-5 grid grid-rows-6
 }
@@ -52,9 +52,15 @@
     text-xs leading-none py-1 text-center
 }
 
+.barPhase {
+    @apply
+    font-bold text-color1-500 dark:text-color2-500
+}
+
 .formLabel {
     @apply
     pb-2 font-bold text-color1-500
+    dark:text-color2-500
 }
 
 .formFile {
