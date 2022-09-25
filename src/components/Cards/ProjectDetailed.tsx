@@ -26,7 +26,7 @@ export default function projectDetail () {
                   <div>Language</div>
                 </div>
                 <div className="flex space-x-2">
-                  <div className="bg-color1-500 rounded-full p-1 my-auto"></div>
+                  <div className="bg-cyber-100 rounded-full p-1 my-auto"></div>
                   <div>Language</div>
                 </div>
                 <div className="flex space-x-2">
@@ -70,20 +70,20 @@ export default function projectDetail () {
         </div>
         <div className="grid gap-5 col-span-6 text-left font-bold row-span-1">
           <div className="border-y-2 grid grid-rows-6 p-5">
-            <div className="row-span-2 text-color1-500 font-bold dark:text-color2-500">Team</div>
+            <div className="row-span-2 text-cyber-100 font-bold dark:text-solar-100">Team</div>
             <div className="row-span-4 grid items-center grid-cols-9">
               <Image src={member} height={30} width={30}/>
               <Image src={member} height={30} width={30}/>
               <Image src={member} height={30} width={30}/>
               <Image src={member} height={30} width={30}/>
               <Image src={member} height={30} width={30}/>
-              <div className="text-2xl font-bold grid text-left  text-color1-500 dark:text-color2-500">+</div>
+              <div className="text-2xl font-bold grid text-left  text-cyber-100 dark:text-solar-100">+</div>
             </div>
           </div>
         </div>
         <div className="grid gap-5 col-span-6  text-left  row-span-2">
           <div className="rounded-gen grid grid-rows-6 p-5">
-            <div className="row-span-1 grid grid-cols-2 text-color1-500 dark:text-color2-500 font-bold">
+            <div className="row-span-1 grid grid-cols-2 text-cyber-100 dark:text-solar-100 font-bold">
               <div><span>8 </span> Collectors / Token Holders</div>
               <div className="text-right font-normal text-gray-500">ERC1155 <span>• Mumbai Testnet</span></div>
             </div>

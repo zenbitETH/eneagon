@@ -54,16 +54,16 @@
 
 .barPhase {
     @apply
-    font-bold text-color1-500 dark:text-color2-500
+    font-bold text-cyber-100 dark:text-solar-100
 }
 
 .formLabel {
     @apply
-    pb-2 font-bold text-color1-500
-    dark:text-color2-500
+    pb-2 font-bold text-cyber-100
+    dark:text-solar-100
 }
 
 .formFile {
     @apply
-    w-full bg-gray-50 rounded-lg border-2 border-color1-500 border-dashed cursor-pointer dark:hover:bg-gray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600 mr-10
+    w-full bg-gray-50 rounded-lg border-2 border-cyber-100 border-dashed cursor-pointer dark:hover:bg-gray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600 mr-10
 }

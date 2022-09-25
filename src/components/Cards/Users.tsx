@@ -14,7 +14,7 @@ export default function Users() {
         <div className="usersGrid">
           <div className="userSource">
             <h2 className="userTittle">Community</h2>
-            <div className="userTotal">10 K</div>
+            <div className="userTotal">235</div>
             <div className="userWebs">
                 <div className="userBt p-[7px] hover:bg-hover-100">
                   <Image src={discord} width={30} height={30} />
@@ -36,7 +36,7 @@ export default function Users() {
               
           <div className="userSource border-y-2">
             <h2 className="userTittle">Off-Chain Users</h2>
-            <div className="userTotal">1 K</div>
+            <div className="userTotal">18</div>
             <div className="userOffchain ">
                 <div className="userBt mr-4 p-[5px] hover:bg-hover-600">
                   <Image src={github} width={30} height={30} />
@@ -49,7 +49,7 @@ export default function Users() {
 
           <div className="userSource text-sm">
             <h2 className="userTittle">on-Chain Users</h2>
-            <div className="userTotal">999</div>
+            <div className="userTotal">57</div>
             <div className="userOnchain">
                 <div className="webBt hover:bg-purple-300">DAO</div>
                 <div className="webBt hover:bg-blue-300">721</div>

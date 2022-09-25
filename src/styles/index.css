@@ -13,7 +13,7 @@
     text-xl 
     z-10
     w-fit
-    text-color1-500 dark:text-color2-500
+    text-cyber-100 dark:text-solar-100
     col-span-12
     w-1/5
     pt-5
@@ -28,7 +28,7 @@
 
 .tabMembers {
     @apply
-    text-color1-500 dark:text-color2-500
+    text-cyber-100 dark:text-solar-100
     
 }
 
@@ -39,7 +39,7 @@ h2 {
 
 .usersCard {
     @apply
-    to-color2-500
+    to-solar-100
     px-5
     rounded-gen 
     col-span-12 xl:col-span-3 2xl:col-span-2 
@@ -67,7 +67,7 @@ h2 {
 
 .userTotal {
     @apply
-    text-5xl text-center text-color1-500 dark:text-color2-500
+    text-5xl text-center text-cyber-100 dark:text-solar-100
     font-bold
     my-10
 }
