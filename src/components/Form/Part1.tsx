@@ -3,8 +3,20 @@ import React from "react";
 
 export default function Part1() {
     const [images, setImages] = React.useState<{ cid: CID; path: string }[]>([]);
+    let ipfs: IPFSHTTPClient | undefined;
+    try {
+        ipfs = create({
+            url: "https://gateway.pinata.cloud/QmfVMM8BTAB8oeERmPpUvjdc8WwtbowhrQXZFAStEEKC4c",
+
+        });
+    } catch (error) {
+        console.error("IPFS error ", error);
+        ipfs = undefined;
+    }
     const onSubmitHandler = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
+        console.log("here");
+        
         const form = event.target as HTMLFormElement;
         const files = (form[0] as HTMLInputElement).files;
       
@@ -23,20 +35,10 @@ export default function Part1() {
             path: result.path,
           },
         ]);
+        console.log(images);
       
         form.reset();
       };
-
-    let ipfs: IPFSHTTPClient | undefined;
-    try {
-        ipfs = create({
-            url: "https://ipfs.infura.io:5001/api/v0",
-
-        });
-    } catch (error) {
-        console.error("IPFS error ", error);
-        ipfs = undefined;
-    }
 
     if (ipfs === undefined)
         return (
@@ -123,17 +125,15 @@ export default function Part1() {
 
                             </div>
                             <input id="dropzone-file" type="file" className="hidden" />
-                            {/* {ipfs && (
+                            {ipfs && (
                                 <>
-                                    <p>Upload File using IPFS</p>
-
                                     <form onSubmit={onSubmitHandler}>
                                         <input name="file" type="file" />
 
                                         <button type="submit">Upload File</button>
                                     </form>
                                 </>
-                            )} */}
+                            )}
                         </label>
                     </div>
                 </div>
