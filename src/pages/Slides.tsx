@@ -12,7 +12,7 @@ import retro8 from '../assets/retro8.svg'
 import retro9 from '../assets/retro9.svg'
 
 
-export default function Home() {
+export default function Slides() {
     return (        
         
         <div>
