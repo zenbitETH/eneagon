@@ -106,7 +106,7 @@
     col-span-12 xl:col-span-6 2xl:col-span-7
     mx-5 xl:mx-0
     rounded-gen h-[100%]
-    overflow-auto
+    overflow-auto scrollbar-hide
 }
 
 .projectGrid {

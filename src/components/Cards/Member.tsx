@@ -5,7 +5,7 @@ export default function Members() {
     return (
       
       <div className="teamMembers">
-          <div className="">
+        <div className="">
           <h1 className="tabMembers ">Collaborators</h1>
           <div className="memberGrid">
             <div className="memberPhoto">
