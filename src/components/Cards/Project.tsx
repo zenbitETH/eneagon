@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import zen from "../../assets/zenbit.png"
+import zen from "../../assets/eneagon.svg"
 import Image from "next/image"
 import donado from "../../assets/donated.svg"
 import badge from '../../assets/Badges.svg'
@@ -36,16 +36,16 @@ export default function Project () {
         <div className="col-span-2 ml-5"><Image src={zen} height={229} width={229}/></div>
         <div className="grid col-span-4 grid-cols-12 grid">
           <div className="col-span-12 text-left pl-5">
-            <div className="projectName">Project Name</div>
-            <div className="italic text-base font-normal ">Type of project • 
-              <span className="pl-1">ERC 1155</span>
+            <div className="projectName">Eneagon</div>
+            <div className="italic text-base font-normal ">DAO tooling 
+              <span className="pl-1">ERC721</span>
             </div>
           </div>
         </div>
       </div>
       <div className="projectInfo">
         <div className="col-span-12 mx-5  mb-2">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Eneagon is a public template for a dashboard that lets mint public goods projects as NFTs, helps to coordinate development milestones, and matches developers' and stakeholders' objectives with governance for retroactive public good funding.
         </div>
         <div className="projectFooter">
           <div className="grid grid-cols-2 p-1 items-center">

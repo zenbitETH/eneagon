@@ -1,4 +1,4 @@
-import zen from "../../assets/zenbit.png"
+import zen from "../../assets/eneagon.svg"
 import Image from "next/image"
 import stars from '../../assets/star.svg'
 import forks from '../../assets/fork.svg'
@@ -23,29 +23,25 @@ export default function projectDetail () {
             <div className="grid gap-5 text-sm col-span-12 grid-cols-5 items-center">
                 <div className="flex space-x-2">
                   <div className="bg-red-500 rounded-full p-1 my-auto"></div>
-                  <div>Language</div>
+                  <div>HTML</div>
                 </div>
                 <div className="flex space-x-2">
                   <div className="bg-color1-500 rounded-full p-1 my-auto"></div>
-                  <div>Language</div>
-                </div>
-                <div className="flex space-x-2">
-                  <div className="bg-blue-500 rounded-full p-1 my-auto"></div>
-                  <div>Language</div>
+                  <div>Typescript</div>
                 </div>
                 <div className="flex space-x-2">
                   <div className="bg-yellow-500 rounded-full p-1 my-auto"></div>
-                  <div>Language</div>
+                  <div>Solidity</div>
                 </div>
                 <div className="flex space-x-2">
                   <div className="bg-purple-500 rounded-full p-1 my-auto"></div>
-                  <div>Language</div>
+                  <div>Tailwind</div>
                 </div>
               </div>
                             
             <div className="projectDes">
               <div className="col-span-12  mb-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Eneagon is a public template for a dashboard that lets mint public goods projects as NFTs, helps to coordinate development milestones, and matches developers' and stakeholders' objectives with governance for retroactive public good funding.
               </div>
               <div className="grid grid-cols-4 col-span-12 mr-20. mt-2 ">
                 <div className="grid grid-cols-2  items-center">
@@ -84,19 +80,21 @@ export default function projectDetail () {
         <div className="grid gap-5 col-span-6  text-left  row-span-2">
           <div className="rounded-gen grid grid-rows-6 p-5">
             <div className="row-span-1 grid grid-cols-2 text-color1-500 dark:text-color2-500 font-bold">
-              <div><span>8 </span> Collectors / Token Holders</div>
-              <div className="text-right font-normal text-gray-500">ERC1155 <span>• Mumbai Testnet</span></div>
+              <div><span>32 </span> Collectors / Token Holders</div>
+              <div className="text-right font-normal text-gray-500">ERC721 <span>• Ethereum Mainnet</span></div>
             </div>
               
             <div className="row-span-5 grid items-center grid-cols-4">
+              <div><Image src={member} height={30} width={30}/><span className="ml-5">pastofre.eth</span></div>
+              <div><Image src={member} height={30} width={30}/><span className="ml-5">habacuc.eth
+</span></div>
+              <div><Image src={member} height={30} width={30}/><span className="ml-5">ilemi.eth</span></div>
+              <div><Image src={member} height={30} width={30}/><span className="ml-5">punkcities.eth
+1</span></div>
               <div><Image src={member} height={30} width={30}/><span className="ml-5">address.eth</span></div>
-              <div><Image src={member} height={30} width={30}/><span className="ml-5">0x1234...abcd</span></div>
-              <div><Image src={member} height={30} width={30}/><span className="ml-5">address.eth</span></div>
-              <div><Image src={member} height={30} width={30}/><span className="ml-5">0x1234...abcd</span></div>
-              <div><Image src={member} height={30} width={30}/><span className="ml-5">address.eth</span></div>
-              <div><Image src={member} height={30} width={30}/><span className="ml-5">0x1234...abcd</span></div>
-              <div><Image src={member} height={30} width={30}/><span className="ml-5">address.eth</span></div>
-              <div><Image src={member} height={30} width={30}/><span className="ml-5">0x1234...abcd</span></div>
+              <div><Image src={member} height={30} width={30}/><span className="ml-5">daphnee.eth</span></div>
+              <div><Image src={member} height={30} width={30}/><span className="ml-5">0x47C9...572B</span></div>
+              <div><Image src={member} height={30} width={30}/><span className="ml-5">0x5536...17E8</span></div>
             </div>
           </div>
 
