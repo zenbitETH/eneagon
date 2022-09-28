@@ -1,4 +1,4 @@
-import zen from "../../assets/zenbit.png"
+import zen from "../../assets/eneagon.svg"
 import Image from "next/image"
 import donado from "../../assets/donated.svg"
 import badge from '../../assets/Badges.svg'
