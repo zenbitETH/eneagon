@@ -41,12 +41,12 @@ export default function Stage1 () {
           </div>
           <div className="text-right">
             <span className="font-semibold inline-block text-backgrounds-700">
-              14%
+              75%
             </span>
           </div>
         </div>
         <div className="overflow-hidden h-3 mb-4 text-xs flex items-center bg-gray-300 rounded-gen ">
-          <div style={{ width: "14%" }} className="shadow-none flex flex-col text-center h-1.5 ml-1 mr-1 rounded-full text-white justify-center bg-backgrounds-700"></div>
+          <div style={{ width: "75%" }} className="shadow-none flex flex-col text-center h-1.5 ml-1 mr-1 rounded-full text-white justify-center bg-backgrounds-700"></div>
         </div>
       </div>
         

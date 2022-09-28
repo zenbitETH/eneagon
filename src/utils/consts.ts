@@ -21,5 +21,5 @@ export const polygonTestnet = {
       },
     },
     testnet: true,
-  };
+};
   

@@ -1,9 +1,13 @@
 import { FC } from 'react'
 import Dashboard from '@/components/Dashboard';
+import Slides from './slides';
+
+
 
 const Home: FC = () => {
-	return (	
+	return (
 		<Dashboard/>
+		/*<Slides/>*/
 	)
 }
 
