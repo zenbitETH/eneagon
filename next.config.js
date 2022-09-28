@@ -8,7 +8,8 @@ const nextConfig = {
 		'statics-polygon-lens-staging.s3.eu-west-1.amazonaws.com',
 		'lens.infura-ipfs.io',
 		'ipfs.io',
-		'ethereum.org'
+		'ethereum.org',
+		'avatars.githubusercontent.com'
 	  ],
 	},
   }
