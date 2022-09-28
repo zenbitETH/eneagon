@@ -13,7 +13,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
         owner:owner,
         repo:repo
     })
-    const contributors = result.data.map(x => ({name:x.login, url:x.url, avatar:x.avatar_url}))
+    const contributors = result.data.map(x => ({name:x.login, url:x.html_url, avatar:x.avatar_url}))
     res.status(200).json( contributors )
 }
 

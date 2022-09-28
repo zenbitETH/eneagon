@@ -1,12 +1,12 @@
 import Image from "next/image"
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import Link from "next/link"
 import Fund from "../SVG/fund"
 import projects from "../../pages/api/projects.json"
 
 
 export default function Stage1 () {
-  
+    // const [mileList, setMileList] = useState([]);
     const getStage = async () => {
       const url = {url: projects[0].github_url};
       const milestones = await fetch("../api/milestones", {
@@ -17,14 +17,13 @@ export default function Stage1 () {
         body:JSON.stringify(url)
       })
       const data = await milestones.json()
-      console.log(data)
       return data
     }  
     
     // refactor so stages are dynamic takes input later
     useEffect(() => {
       getStage().then(data => {
-
+        
       })
     })
 
