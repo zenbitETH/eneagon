@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { useRouter } from 'next/router';
 import Image from 'next/image'
 import SB from '../assets/sbadge.svg'
 import WDC from '../assets/wcn.svg'
@@ -10,6 +11,7 @@ import Sbadges from '@/components/SVG/Sbadges'
 
 
 export default function projectDetail() {
+  
     return (
     <div className='projectCard '>
       <div className='projectMain'>

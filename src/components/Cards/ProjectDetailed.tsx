@@ -1,4 +1,4 @@
-import zen from "../../assets/zenbit.png"
+import zen from "../../assets/eneagon.svg"
 import Image from "next/image"
 import stars from '../../assets/star.svg'
 import forks from '../../assets/fork.svg'
@@ -6,8 +6,74 @@ import Link from "next/link"
 import member from '../../assets/memberBlank.svg'
 import Webi from '@/components/SVG/web'
 import Giti from  '@/components/SVG/Repo'
+import {useState, useEffect} from 'react'
 
-export default function projectDetail () {
+
+export default function projectDetail() {
+  const [projectData, setProjectData] = useState({});
+  const [githubData, setGithubData] = useState({});
+  const [lang, setLanguages] = useState([]);
+  const [contributors, setCont] = useState([]);
+
+  const colors = ["bg-red", "bg-blue", "bg-purple", "bg-cyan", "bg-amber", "bg-indigo", "bg-lime", "bg-fuchsia", "bg-amber2", "bg-pink", "bg-green"]
+  const getProject = async () => {
+    const data = {}
+    const projectResponse = await fetch("../../api/projects", {
+      method: "GET",
+    });
+
+    const project = await projectResponse.json();
+    const url = {url: project[0]["github_url"]};
+
+    const languagesResp = await fetch("../api/languages", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(url)
+    });
+
+    const repoResp = await fetch("../../api/repository", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(url)
+    });
+
+    const collabResp = await fetch("../../api/contributors", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(url)
+    })
+
+    const repository = await repoResp.json()
+    const languages = await languagesResp.json()
+    const collab = await collabResp.json()
+
+    data["project"] =  project
+    data["languages"] = languages
+    data["repository"] = repository.data // {name, forks, description, watchers: stars, subscribers_count: watchers}
+    data["collab"] = collab
+    
+    return data 
+  }
+  
+  useEffect(() => {
+    getProject()
+      .then(data => 
+        {
+          setProjectData(data["project"][0])
+          setLanguages(data["languages"])
+          setGithubData(data["repository"])
+          setCont(data["collab"])
+        }
+      ); // only pulling the first project for demo purposes.
+  }, [])
+
+
     return (
       <div className="projectDetail">
         <div className="col-span-6 grid-cols-6 grid relative row-span-2 relative">
@@ -16,45 +82,31 @@ export default function projectDetail () {
           <div className="grid col-span-4 grid-cols-12 grid pl-5 gap-5">
             
             <div className="col-span-12 text-left">
-              <div className="projectName">Project Name</div>
-              <div className="italic text-base font-normal ">Type of project </div>
-              
+              <div className="projectName">{projectData.name}</div>
+              <div className="italic text-base font-normal ">{projectData.type}</div>
+
             </div>
             <div className="grid gap-5 text-sm col-span-12 grid-cols-5 items-center">
+              {lang.map((item, index) => (
                 <div className="flex space-x-2">
-                  <div className="bg-red-500 rounded-full p-1 my-auto"></div>
-                  <div>Language</div>
+                    <div className={`${colors[index]} rounded-full p-1 my-auto`}></div>
+                    <div>{item}</div>
                 </div>
-                <div className="flex space-x-2">
-                  <div className="bg-cyber-100 rounded-full p-1 my-auto"></div>
-                  <div>Language</div>
-                </div>
-                <div className="flex space-x-2">
-                  <div className="bg-blue-500 rounded-full p-1 my-auto"></div>
-                  <div>Language</div>
-                </div>
-                <div className="flex space-x-2">
-                  <div className="bg-yellow-500 rounded-full p-1 my-auto"></div>
-                  <div>Language</div>
-                </div>
-                <div className="flex space-x-2">
-                  <div className="bg-purple-500 rounded-full p-1 my-auto"></div>
-                  <div>Language</div>
-                </div>
-              </div>
+              ))}
+            </div>
                             
             <div className="projectDes">
               <div className="col-span-12  mb-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                {projectData.description}
               </div>
               <div className="grid grid-cols-4 col-span-12 mr-20. mt-2 ">
                 <div className="grid grid-cols-2  items-center">
                   <Image src={stars} height={23} width={18}/>
-                  <div className="text-left">00</div>
+                  <div className="text-left">0{githubData.watchers}</div>  {/* Add zfill later */}
                 </div>
                 <div className="grid grid-cols-2 items-center ">
                   <Image src={forks} height={23} width={18}/>
-                  <div className="text-left">00</div>
+                  <div className="text-left">0{githubData.forks}</div> {/* Add zfill later */}
                 </div>
 
                 <Link href="/" >
@@ -72,31 +124,33 @@ export default function projectDetail () {
           <div className="border-y-2 grid grid-rows-6 p-5">
             <div className="row-span-2 text-cyber-100 font-bold dark:text-solar-100">Team</div>
             <div className="row-span-4 grid items-center grid-cols-9">
-              <Image src={member} height={30} width={30}/>
-              <Image src={member} height={30} width={30}/>
-              <Image src={member} height={30} width={30}/>
-              <Image src={member} height={30} width={30}/>
-              <Image src={member} height={30} width={30}/>
-              <div className="text-2xl font-bold grid text-left  text-cyber-100 dark:text-solar-100">+</div>
+              {contributors.map((items) => (
+                <a href={items.url}>
+                  <Image className="rounded-full" src={items.avatar} height={30} width={30} />
+                </a>
+              ))}
+              <div className="text-2xl font-bold grid text-left  text-color1-500 dark:text-color2-500">+</div>
             </div>
           </div>
         </div>
         <div className="grid gap-5 col-span-6  text-left  row-span-2">
           <div className="rounded-gen grid grid-rows-6 p-5">
-            <div className="row-span-1 grid grid-cols-2 text-cyber-100 dark:text-solar-100 font-bold">
-              <div><span>8 </span> Collectors / Token Holders</div>
-              <div className="text-right font-normal text-gray-500">ERC1155 <span>• Mumbai Testnet</span></div>
+            <div className="row-span-1 grid grid-cols-2 text-color1-500 dark:text-color2-500 font-bold">
+              <div><span>32 </span> Collectors / Token Holders</div>
+              <div className="text-right font-normal text-gray-500">ERC721 <span>• Ethereum Mainnet</span></div>
             </div>
               
             <div className="row-span-5 grid items-center grid-cols-4">
+              <div><Image src={member} height={30} width={30}/><span className="ml-5">pastofre.eth</span></div>
+              <div><Image src={member} height={30} width={30}/><span className="ml-5">habacuc.eth
+</span></div>
+              <div><Image src={member} height={30} width={30}/><span className="ml-5">ilemi.eth</span></div>
+              <div><Image src={member} height={30} width={30}/><span className="ml-5">punkcities.eth
+1</span></div>
               <div><Image src={member} height={30} width={30}/><span className="ml-5">address.eth</span></div>
-              <div><Image src={member} height={30} width={30}/><span className="ml-5">0x1234...abcd</span></div>
-              <div><Image src={member} height={30} width={30}/><span className="ml-5">address.eth</span></div>
-              <div><Image src={member} height={30} width={30}/><span className="ml-5">0x1234...abcd</span></div>
-              <div><Image src={member} height={30} width={30}/><span className="ml-5">address.eth</span></div>
-              <div><Image src={member} height={30} width={30}/><span className="ml-5">0x1234...abcd</span></div>
-              <div><Image src={member} height={30} width={30}/><span className="ml-5">address.eth</span></div>
-              <div><Image src={member} height={30} width={30}/><span className="ml-5">0x1234...abcd</span></div>
+              <div><Image src={member} height={30} width={30}/><span className="ml-5">daphnee.eth</span></div>
+              <div><Image src={member} height={30} width={30}/><span className="ml-5">0x47C9...572B</span></div>
+              <div><Image src={member} height={30} width={30}/><span className="ml-5">0x5536...17E8</span></div>
             </div>
           </div>
 
