@@ -139,7 +139,7 @@
 .projectDetail {
     @apply 
     col-span-6 text-center grid grid-rows-5 rounded-gen pt-5 gap-5
-    bg-backgrounds-500 dark:bg-backgrounds-400 
+    dark:bg-backgrounds-400 
 }
 
 .projectName {
