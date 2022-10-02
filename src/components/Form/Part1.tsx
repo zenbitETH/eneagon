@@ -1,7 +1,8 @@
+import { filterProps } from "framer-motion";
 import { create, CID, IPFSHTTPClient } from "ipfs-http-client";
 import React from "react";
 
-export default function Part1() {
+export default function Part1(prop) {
     const [images, setImages] = React.useState<{ cid: CID; path: string }[]>([]);
     let ipfs: IPFSHTTPClient | undefined;
     try {
@@ -50,6 +51,7 @@ export default function Part1() {
                 </header>
             </div>
         );
+   
     return (
         <div className='formSection'>
             <div>
@@ -130,7 +132,7 @@ export default function Part1() {
                                     <form onSubmit={onSubmitHandler}>
                                         <input name="file" type="file" />
 
-                                        <button type="submit">Upload File</button>
+                                        <button type="submit">Upload File</button> {/* I need to add something to pull logo ref here */}
                                     </form>
                                 </>
                             )}
@@ -140,12 +142,12 @@ export default function Part1() {
                 <div className='p-5 gap-5 grid'>
                     <div>
                         <div className='formLabel'>Project Name</div>
-                        <input type='text' placeholder='Name your project' className='placeholder:italic px-6 py-3 text-black w-full border-color1-500 mx-auto rounded-dd'></input>
+                        <input ref={prop.projectName} type='text' placeholder='Name your project' className='placeholder:italic px-6 py-3 text-black w-full border-color1-500 mx-auto rounded-dd'></input>
                     </div>
                     <div>
                         <div className='formLabel'>Type of project</div>
-                        <select className='pl-5 text-black w-full rounded-dd px-6 py-3 border-color1-500'>
-                            <option selected>Please select</option>
+                        <select ref={prop.projectType} className='pl-5 text-black w-full rounded-dd px-6 py-3 border-color1-500'>
+                            <option value="" selected>Please select</option>
                             <option>DeFi</option>
                             <option>NFTs</option>
                             <option>Gaming</option>
@@ -153,12 +155,12 @@ export default function Part1() {
                             <option>Layer 2</option>
                             <option>Wallet/Payments</option>
                             <option>Developer Tools</option>
-                            <option value="">Data/Analytics</option>
-                            <option value="">Audio/Video</option>
-                            <option value="">Social Network</option>
-                            <option value="">Zero Knoledge</option>
-                            <option value="">Metaverse</option>
-                            <option value="">Other</option>
+                            <option>Data/Analytics</option>
+                            <option>Audio/Video</option>
+                            <option>Social Network</option>
+                            <option>Zero Knoledge</option>
+                            <option>Metaverse</option>
+                            <option>Other</option>
                         </select>
 
                     </div>
@@ -166,7 +168,7 @@ export default function Part1() {
             </div>
             <div className='row-span-2 w-4/5 mx-auto'>
                 <div className='formLabel'>Description</div>
-                <textarea placeholder='Describe your project' className='p-5 text-black w-full mx-auto rounded-dd placeholder:italic h-full border-color1-500'></textarea>
+                <textarea  ref={prop.description} placeholder='Describe your project' className='p-5 text-black w-full mx-auto rounded-dd placeholder:italic h-full border-color1-500'></textarea>
             </div>
             {/*<div className='text-right w-4/5 my-auto pt-14 mx-auto'>
                 <div className='px-10 py-3 hover bg-color1-500 w-fit ml-auto rounded-gen cursor-pointer text-white'>
