@@ -7,6 +7,7 @@ import member from '../../assets/memberBlank.svg'
 import Webi from '@/components/SVG/web'
 import Giti from  '@/components/SVG/Repo'
 import {useState, useEffect} from 'react'
+import { getProject, getAllLanguages, getAllContributors, getRepository  }  from '../../APIHandler'
 
 
 export default function projectDetail() {
@@ -16,61 +17,23 @@ export default function projectDetail() {
   const [contributors, setCont] = useState([]);
 
   const colors = ["bg-red", "bg-blue", "bg-purple", "bg-cyan", "bg-amber", "bg-indigo", "bg-lime", "bg-fuchsia", "bg-amber2", "bg-pink", "bg-green"]
-  const getProject = async () => {
-    const data = {}
-    const projectResponse = await fetch("../../api/projects", {
-      method: "GET",
-    });
 
-    const project = await projectResponse.json();
-    const url = {url: project[0]["github_url"]};
+  const setAllFields = async () => {
+    const project = await getProject();
+   
+    setProjectData(project[0]) // Only setting to the first project for now
+    const url = {url: project[0].github_url}
 
-    const languagesResp = await fetch("../api/languages", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(url)
-    });
+    const languages = await getAllLanguages(url)
+    const contributors = await getAllContributors(url)
+    const repository = await getRepository(url)
 
-    const repoResp = await fetch("../../api/repository", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(url)
-    });
-
-    const collabResp = await fetch("../../api/contributors", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(url)
-    })
-
-    const repository = await repoResp.json()
-    const languages = await languagesResp.json()
-    const collab = await collabResp.json()
-
-    data["project"] =  project
-    data["languages"] = languages
-    data["repository"] = repository.data // {name, forks, description, watchers: stars, subscribers_count: watchers}
-    data["collab"] = collab
-    
-    return data 
+    setLanguages(languages)
+    setCont(contributors)
+    setGithubData(repository.data)
   }
-  
   useEffect(() => {
-    getProject()
-      .then(data => 
-        {
-          setProjectData(data["project"][0])
-          setLanguages(data["languages"])
-          setGithubData(data["repository"])
-          setCont(data["collab"])
-        }
-      ); // only pulling the first project for demo purposes.
+    setAllFields()
   }, [])
 
 

@@ -22,7 +22,6 @@ export default function Part5(prop) {
             urlThree: prop.urlThree.current.value
         }
 
-        console.log(formData)
     }
     return (
         <div className='formSection'>
@@ -111,7 +110,7 @@ export default function Part5(prop) {
                 <div className='projectBT w-1/4 ml-auto'>
                     Mint project NFT
                 </div>
-                <button onClick={getFormData}>Click here</button>
+                {/* <button onClick={getFormData}>Click here</button> */}
             </div>
         </div>
     )
