@@ -12,10 +12,7 @@ export default function Project () {
 
   useEffect(() => {
     getProject().then(data => {
-        const result = data.json().then(response =>
-        {
-          setProjectData(response[0]) // this is hardcoded to the first project, change when better is needed.
-        })
+      setProjectData(data[0]) // this is hardcoded to the first project, change when better is needed.
     })
 }, [])
 
