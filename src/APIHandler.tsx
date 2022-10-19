@@ -16,6 +16,22 @@ export function getAllContributors(url){
     return data
 }
 
+export function getMilestones(url) {
+    const data = fetch("../api/milestones", {
+        method: "POST",
+        headers:{
+          "Content-Type": "application/json"
+        },
+        body:JSON.stringify(url)
+      }).then(response => {
+        if(response.ok){
+            return response.json()
+        }
+      }).then(response => (response))
+
+      return data
+}
+
 export function getRepository(url) {
     const data = fetch('../api/repository', {
         method: "POST",
