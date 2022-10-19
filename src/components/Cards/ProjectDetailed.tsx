@@ -11,8 +11,8 @@ import { getProject, getAllLanguages, getAllContributors, getRepository  }  from
 
 
 export default function projectDetail() {
-  const [projectData, setProjectData] = useState({});
-  const [githubData, setGithubData] = useState({});
+  const [projectData, setProjectData] = useState({name:"", contractType:"", type:"", description:"", logo_url:""});
+  const [githubData, setGithubData] = useState({watchers:"", forks: ""});
   const [lang, setLanguages] = useState([]);
   const [contributors, setCont] = useState([]);
 
@@ -39,10 +39,10 @@ export default function projectDetail() {
 
     return (
       <div className="projectDetail">
-        <div className="col-span-6 grid-cols-6 grid relative row-span-2 relative">
+        <div className="col-span-6 grid-cols-6 grid relative row-span-2">
           <div className="absolute right-5 top-0 cursor-pointer text-4xl">🌱</div>
-          <div className="col-span-2"><Image src={zen} height={229} width={229}/></div>
-          <div className="grid col-span-4 grid-cols-12 grid pl-5 gap-5">
+          <div className="col-span-2">{projectData.logo_url !== "" ? <Image src={projectData.logo_url} height={229} width={229}/>: <Image src={zen} height={229} width={229}/>}</div>
+          <div className="grid col-span-4 grid-cols-12 pl-5 gap-5">
             
             <div className="col-span-12 text-left">
               <div className="projectName">{projectData.name}</div>
@@ -65,11 +65,11 @@ export default function projectDetail() {
               <div className="grid grid-cols-4 col-span-12 mr-20. mt-2 ">
                 <div className="grid grid-cols-2  items-center">
                   <Image src={stars} height={23} width={18}/>
-                  <div className="text-left">0{githubData.watchers}</div>  {/* Add zfill later */}
+                  <div className="text-left">{(githubData.watchers).toString().padStart(2, "0")}</div>
                 </div>
                 <div className="grid grid-cols-2 items-center ">
                   <Image src={forks} height={23} width={18}/>
-                  <div className="text-left">0{githubData.forks}</div> {/* Add zfill later */}
+                  <div className="text-left">{(githubData.forks).toString().padStart(2, "0")}</div>
                 </div>
 
                 <Link href="/" >
