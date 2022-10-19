@@ -51,7 +51,7 @@ export default function projectDetail() {
             </div>
             <div className="grid gap-5 text-sm col-span-12 grid-cols-5 items-center">
               {lang.map((item, index) => (
-                <div className="flex space-x-2">
+                <div key={index} className="flex space-x-2">
                     <div className={`${colors[index]} rounded-full p-1 my-auto`}></div>
                     <div>{item}</div>
                 </div>
@@ -87,8 +87,8 @@ export default function projectDetail() {
           <div className="border-y-2 grid grid-rows-6 p-5">
             <div className="row-span-2 text-color1-500 font-bold dark:text-color2-500">Team</div>
             <div className="row-span-4 grid items-center grid-cols-9">
-              {contributors.map((items) => (
-                <a href={items.url}>
+              {contributors.map((items, index) => (
+                <a key={index} href={items.url}>
                   <Image className="rounded-full" src={items.avatar} height={30} width={30} />
                 </a>
               ))}
