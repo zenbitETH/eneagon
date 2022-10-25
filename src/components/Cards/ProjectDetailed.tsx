@@ -7,79 +7,43 @@ import member from '../../assets/memberBlank.svg'
 import Webi from '@/components/SVG/web'
 import Giti from  '@/components/SVG/Repo'
 import {useState, useEffect} from 'react'
+import { getProject, getAllLanguages, getAllContributors, getRepository  }  from '../../APIHandler'
 
 
 export default function projectDetail() {
-  const [projectData, setProjectData] = useState({});
-  const [githubData, setGithubData] = useState({});
+  const [projectData, setProjectData] = useState({name:"", contractType:"", type:"", description:"", logo_url:""});
+  const [githubData, setGithubData] = useState({watchers:"", forks: ""});
   const [lang, setLanguages] = useState([]);
   const [contributors, setCont] = useState([]);
 
   const colors = ["bg-red", "bg-blue", "bg-purple", "bg-cyan", "bg-amber", "bg-indigo", "bg-lime", "bg-fuchsia", "bg-amber2", "bg-pink", "bg-green"]
-  const getProject = async () => {
-    const data = {}
-    const projectResponse = await fetch("../../api/projects", {
-      method: "GET",
-    });
 
-    const project = await projectResponse.json();
-    const url = {url: project[0]["github_url"]};
+  const setAllFields = async () => {
+    const project = await getProject();
+   
+    setProjectData(project[0]) // Only setting to the first project for now
+    const url = {url: project[0].github_url}
 
-    const languagesResp = await fetch("../api/languages", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(url)
-    });
+    const languages = await getAllLanguages(url)
+    const contributors = await getAllContributors(url)
+    const repository = await getRepository(url)
 
-    const repoResp = await fetch("../../api/repository", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(url)
-    });
-
-    const collabResp = await fetch("../../api/contributors", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(url)
-    })
-
-    const repository = await repoResp.json()
-    const languages = await languagesResp.json()
-    const collab = await collabResp.json()
-
-    data["project"] =  project
-    data["languages"] = languages
-    data["repository"] = repository.data // {name, forks, description, watchers: stars, subscribers_count: watchers}
-    data["collab"] = collab
-    
-    return data 
+    setLanguages(languages)
+    setCont(contributors)
+    setGithubData(repository.data)
   }
-  
   useEffect(() => {
-    getProject()
-      .then(data => 
-        {
-          setProjectData(data["project"][0])
-          setLanguages(data["languages"])
-          setGithubData(data["repository"])
-          setCont(data["collab"])
-        }
-      ); // only pulling the first project for demo purposes.
+    setAllFields()
   }, [])
 
 
     return (
       <div className="projectDetail">
         <div className="col-span-6 grid-cols-6 grid relative row-span-6 relative">
+
           <div className="absolute right-5 top-0 cursor-pointer text-4xl">🌱</div>
-          <div className="col-span-2"><Image src={zen} height={229} width={229}/></div>
-          <div className="grid col-span-4 grid-cols-12 grid pl-5 gap-5">
+          <div className="col-span-2">{projectData.logo_url !== "" ? <Image src={projectData.logo_url} height={229} width={229}/>: <Image src={zen} height={229} width={229}/>}</div>
+          <div className="grid col-span-4 grid-cols-12 pl-5 gap-5">
             
             <div className="col-span-12 text-left">
               <div className="projectName">{projectData.name}</div>
@@ -88,7 +52,7 @@ export default function projectDetail() {
             </div>
             <div className="grid gap-5 text-sm col-span-12 grid-cols-5 items-center">
               {lang.map((item, index) => (
-                <div className="flex space-x-2">
+                <div key={index} className="flex space-x-2">
                     <div className={`${colors[index]} rounded-full p-1 my-auto`}></div>
                     <div>{item}</div>
                 </div>
@@ -102,11 +66,11 @@ export default function projectDetail() {
               <div className="grid grid-cols-4 col-span-12 mr-20. mt-2 ">
                 <div className="grid grid-cols-2  items-center">
                   <Image src={stars} height={23} width={18}/>
-                  <div className="text-left">0{githubData.watchers}</div>  {/* Add zfill later */}
+                  <div className="text-left">{(githubData.watchers).toString().padStart(2, "0")}</div>
                 </div>
                 <div className="grid grid-cols-2 items-center ">
                   <Image src={forks} height={23} width={18}/>
-                  <div className="text-left">0{githubData.forks}</div> {/* Add zfill later */}
+                  <div className="text-left">{(githubData.forks).toString().padStart(2, "0")}</div>
                 </div>
 
                 <Link href="/" >
@@ -125,9 +89,10 @@ export default function projectDetail() {
           <div className="border-y-2 grid grid-rows-6 p-5">
             <div className="row-span-2 text-cyber-100 font-bold dark:text-solar-100">Team</div>
             <div className="row-span-4 grid items-center grid-cols-9">
-              {contributors.map((items) => (
-                <a href={items.url}>
-                  <Image className="rounded-full" src={items.avatar} height={50} width={50} />
+              {contributors.map((items, index) => (
+                <a key={index} href={items.url}>
+                  <Image className="rounded-full" src={items.avatar} height={30} width={30} />
+
                 </a>
               ))}
             </div>

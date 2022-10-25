@@ -4,30 +4,17 @@ import donado from "../../assets/donated.svg"
 import badge from '../../assets/Badges.svg'
 import Link from "next/link"
 import {useEffect, useState} from 'react';
+import { getProject } from '../../APIHandler'
 
 
 export default function Project () {
-  const [projectData, setProjectData] = useState({});
-
-
-  const getProject = async () => {
-    const repoResponse = await fetch("../../api/projects", {
-      method: "GET",
-    });
-
-    return repoResponse.json();
-  } 
-
-  // function 
+  const [projectData, setProjectData] = useState({name:"", contractType:"", type:"", description:""});
 
   useEffect(() => {
-    getProject()
-      .then(data => 
-        {
-          setProjectData(data[0])
-        }
-      ); // only pulling the first project for demo purposes.
-  }, [])
+    getProject().then(data => {
+      setProjectData(data[0]) // this is hardcoded to the first project, change when better is needed.
+    })
+}, [])
 
 
   return (

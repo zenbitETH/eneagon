@@ -17,7 +17,6 @@ export default function Stage1 () {
         body:JSON.stringify(url)
       })
       const data = await milestones.json()
-      console.log(data)
       return data
     }  
     

@@ -2,14 +2,14 @@
 const nextConfig = {
 	reactStrictMode: true,
 	images: {
-	  
 	  domains: [
 		'ipfs.infura.io',
 		'statics-polygon-lens-staging.s3.eu-west-1.amazonaws.com',
 		'lens.infura-ipfs.io',
 		'ipfs.io',
 		'ethereum.org',
-		'avatars.githubusercontent.com'
+		'avatars.githubusercontent.com',
+		'bf.zenbit.mx'
 	  ],
 	},
   }
