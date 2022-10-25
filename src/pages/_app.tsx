@@ -15,7 +15,7 @@ const App = ({ Component, pageProps }) => {
 		<ThemeProvider attribute="class">
 			<Web3Provider>
 				<div className="relative flex items-top justify-center sm:items-center sm:pt-0 min-h-screen font-ar 
-				bg-gradient-to-br from-color2-500  to-color1-500
+				bg-gradient-to-br from-solar-100  to-cyber-100
 				dark:bg-gradient-to-br dark:from-color1-700 dark:to-color2-900  ">
 					<Header/>
 					<Toolbar/>

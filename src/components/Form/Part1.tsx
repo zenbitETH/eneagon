@@ -95,7 +95,7 @@ export default function Part1(prop) {
                     </div>
                 </div>
                 <div className="grid mx-5 pl-2 grid-cols-5 text-center text-sm ">
-                    <div className="font-bold underline underline-offset-4 text-color1-500 dark:text-color2-500">
+                    <div className="font-bold underline underline-offset-4 text-cyber-100 dark:text-solar-100">
                         New project
                     </div>
 
@@ -142,7 +142,9 @@ export default function Part1(prop) {
                 <div className='p-5 gap-5 grid'>
                     <div>
                         <div className='formLabel'>Project Name</div>
+
                         <input ref={prop.projectName} type='text' placeholder='Name your project' className='placeholder:italic px-6 py-3 text-black w-full border-color1-500 mx-auto rounded-dd'></input>
+
                     </div>
                     <div>
                         <div className='formLabel'>Type of project</div>
@@ -171,7 +173,7 @@ export default function Part1(prop) {
                 <textarea  ref={prop.description} placeholder='Describe your project' className='p-5 text-black w-full mx-auto rounded-dd placeholder:italic h-full border-color1-500'></textarea>
             </div>
             {/*<div className='text-right w-4/5 my-auto pt-14 mx-auto'>
-                <div className='px-10 py-3 hover bg-color1-500 w-fit ml-auto rounded-gen cursor-pointer text-white'>
+                <div className='px-10 py-3 hover bg-cyber-100 w-fit ml-auto rounded-gen cursor-pointer text-white'>
                     Continue
                 </div>
             </div>*/}

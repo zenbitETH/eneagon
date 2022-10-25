@@ -5,27 +5,27 @@ export default function Part4(prop) {
             <div className="formProgress">	
                     <div className="flex ">
                         <div className="flex-1">
-                            <div className="progressCircles bg-color1-500 dark:bg-color2-500">✓</div>
+                            <div className="progressCircles bg-cyber-100 dark:bg-solar-100">✓</div>
                         </div>
                         <div className="progressBar">
                             <div className="barContainer">
-                                <div className="barBar bg-color1-500 dark:bg-color2-500"></div>
+                                <div className="barBar bg-cyber-100 dark:bg-solar-100"></div>
                             </div>
                         </div>
                         <div className="flex-1">
-                            <div className="progressCircles bg-color1-500 dark:bg-color2-500">✓</div>
+                            <div className="progressCircles bg-cyber-100 dark:bg-solar-100">✓</div>
                         </div>
                         <div className="progressBar">
                             <div className="barContainer">
-                                <div className="barBar bg-color1-500 dark:bg-color2-500" ></div>
+                                <div className="barBar bg-cyber-100 dark:bg-solar-100" ></div>
                             </div>
                         </div>
                         <div className="flex-1">
-                            <div className="progressCircles bg-color1-500 dark:bg-color2-500">✓</div>
+                            <div className="progressCircles bg-cyber-100 dark:bg-solar-100">✓</div>
                         </div>
                         <div className="progressBar">
                             <div className="barContainer">
-                                <div className="barBar bg-color1-500 dark:bg-color2-500"></div>
+                                <div className="barBar bg-cyber-100 dark:bg-solar-100"></div>
                             </div>
                         </div>
                         <div className="flex-1">
@@ -66,7 +66,9 @@ export default function Part4(prop) {
             <div className='  w-4/5 mx-auto '>
                 <div className=''>
                     <div className='formLabel'>🪴 Stage 02 name</div>
+
                     <input ref={prop.stage} type='url' placeholder='Set a name for the Stage 1' className='pl-5 text-black w-full mx-auto rounded-dd placeholder:italic border-color1-500'></input>                    
+
                 </div>
                 
             </div>
@@ -78,12 +80,13 @@ export default function Part4(prop) {
                 <div className=''>
                     <div className='formLabel'>Github milestone URL</div>
                     <input ref={prop.url} type='url' placeholder='Use a Github milestone to track this stage' className='pl-5 text-black w-full mx-auto rounded-dd placeholder:italic border-color1-500'></input>                    
+
                 </div>
                 
             </div>
             
             {/*<div className='text-right w-4/5 my-auto mx-auto'>
-                <div className='px-10 py-3 hover bg-color1-500 w-fit ml-auto rounded-gen cursor-pointer text-white'>
+                <div className='px-10 py-3 hover bg-cyber-100 w-fit ml-auto rounded-gen cursor-pointer text-white'>
                     Continue
                 </div>
             </div>*/}
