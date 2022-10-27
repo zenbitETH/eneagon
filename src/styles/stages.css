@@ -4,5 +4,5 @@
 
 .stageFunded {
     @apply
-    text-left text-cyber-100 dark:text-solar-100 col-span-3 font-medium
+    text-left text-lunar-100 dark:text-solar-100 col-span-3 font-medium
 }

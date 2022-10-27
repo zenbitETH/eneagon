@@ -87,7 +87,7 @@ export default function projectDetail() {
 
         <div className="grid gap-5 col-span-6 text-left font-bold row-span-1">
           <div className="border-y-2 grid grid-rows-6 p-5">
-            <div className="row-span-2 text-cyber-100 font-bold dark:text-solar-100">Team</div>
+            <div className="row-span-2 text-lunar-100 font-bold dark:text-solar-100">Team</div>
             <div className="row-span-4 grid items-center grid-cols-9">
               {contributors.map((items, index) => (
                 <a key={index} href={items.url}>

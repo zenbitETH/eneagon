@@ -13,7 +13,7 @@
     text-xl 
     z-10
     w-fit
-    text-cyber-100 dark:text-solar-100
+    text-lunar-100 dark:text-solar-100
     col-span-12
     w-1/5
     pt-5
@@ -28,7 +28,7 @@
 
 .tabMembers {
     @apply
-    text-cyber-100 dark:text-solar-100
+    text-lunar-100 dark:text-solar-100
     
 }
 
@@ -67,7 +67,7 @@ h2 {
 
 .userTotal {
     @apply
-    text-5xl text-center text-cyber-100 dark:text-solar-100
+    text-5xl text-center text-lunar-100 dark:text-solar-100
     font-bold
     my-10
 }
