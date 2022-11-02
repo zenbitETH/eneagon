@@ -140,6 +140,7 @@ module.exports = {
 			fontFamily: {
 				ar: ['Archivo'],
 				k2: ['K2D'],
+				exo: ['Exo'],
 			},
 			container: {
 				center: true,
