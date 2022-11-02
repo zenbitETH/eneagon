@@ -6,7 +6,7 @@
 
 .header {
     @apply
-    fixed top-0 w-full px-5 sm:px-24 py-2.5 rounded  z-20 backdrop-blur-md 
+    fixed top-0 w-full px-5 sm:px-24 py-5 rounded  z-20 backdrop-blur-md 
 }
 
 .wrap {
