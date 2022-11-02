@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,200;0,400;0,500;0,700;0,900;1,200;1,400;1,500;1,700;1,900&family=K2D:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;1,100;1,300;1,400;1,500;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,200;0,400;0,500;0,700;0,900;1,200;1,400;1,500;1,700;1,900&family=Exo:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&family=K2D:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;1,100;1,300;1,400;1,500;1,700;1,800&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -13,7 +13,7 @@
     text-xl 
     z-10
     w-fit
-    text-color1-500 dark:text-color2-500
+    text-lunar-100 dark:text-solar-100
     col-span-12
     w-1/5
     pt-5
@@ -28,7 +28,7 @@
 
 .tabMembers {
     @apply
-    text-color1-500 dark:text-color2-500
+    text-lunar-100 dark:text-solar-100
     
 }
 
@@ -39,7 +39,7 @@ h2 {
 
 .usersCard {
     @apply
-    to-color2-500
+    to-solar-100
     px-5
     rounded-gen 
     col-span-12 xl:col-span-3 2xl:col-span-2 
@@ -67,7 +67,7 @@ h2 {
 
 .userTotal {
     @apply
-    text-5xl text-center text-color1-500 dark:text-color2-500
+    text-5xl text-center text-lunar-100 dark:text-solar-100
     font-bold
     my-10
 }

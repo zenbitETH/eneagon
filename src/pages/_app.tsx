@@ -14,13 +14,13 @@ const App = ({ Component, pageProps }) => {
 	return (
 		<ThemeProvider attribute="class">
 			<Web3Provider>
-				<div className="relative flex items-top justify-center sm:items-center sm:pt-0 min-h-screen font-ar 
-				bg-gradient-to-br from-color2-500  to-color1-500
-				dark:bg-gradient-to-br dark:from-color1-700 dark:to-color2-900  ">
+				<div className="relative flex items-top justify-center sm:items-center sm:pt-0 min-h-screen font-exo 
+				bg-gradient-to-br from-solar-100  to-lunar-100
+				dark:bg-gradient-to-br dark:from-lunar-900 dark:to-lunar-600  ">
 					<Header/>
-					<Toolbar/>
+					{/*<Toolbar/>*/}
 					<Component {...pageProps} />
-					<ThemeSwitcher className="absolute bottom-6 right-6"/>
+					<ThemeSwitcher className="fixed bottom-6 right-6"/>
 				</div>
 			</Web3Provider>
 		</ThemeProvider>

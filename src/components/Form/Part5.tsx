@@ -29,35 +29,35 @@ export default function Part5(prop) {
             <div className="formProgress">	
                     <div className="flex ">
                         <div className="flex-1">
-                            <div className="progressCircles bg-color1-500 dark:bg-color2-500">✓</div>
+                            <div className="progressCircles bg-lunar-100 dark:bg-solar-100">✓</div>
                         </div>
                         <div className="progressBar">
                             <div className="barContainer">
-                                <div className="barBar bg-color1-500 dark:bg-color2-500"></div>
+                                <div className="barBar bg-lunar-100 dark:bg-solar-100"></div>
                             </div>
                         </div>
                         <div className="flex-1">
-                            <div className="progressCircles bg-color1-500 dark:bg-color2-500">✓</div>
+                            <div className="progressCircles bg-lunar-100 dark:bg-solar-100">✓</div>
                         </div>
                         <div className="progressBar">
                             <div className="barContainer">
-                                <div className="barBar bg-color1-500 dark:bg-color2-500" ></div>
+                                <div className="barBar bg-lunar-100 dark:bg-solar-100" ></div>
                             </div>
                         </div>
                         <div className="flex-1">
-                            <div className="progressCircles bg-color1-500 dark:bg-color2-500">✓</div>
+                            <div className="progressCircles bg-lunar-100 dark:bg-solar-100">✓</div>
                         </div>
                         <div className="progressBar">
                             <div className="barContainer">
-                                <div className="barBar bg-color1-500 dark:bg-color2-500"></div>
+                                <div className="barBar bg-lunar-100 dark:bg-solar-100"></div>
                             </div>
                         </div>
                         <div className="flex-1">
-                            <div className="progressCircles bg-color1-500 dark:bg-color2-500">✓</div>
+                            <div className="progressCircles bg-lunar-100 dark:bg-solar-100">✓</div>
                         </div>
                         <div className="progressBar">
                             <div className="barContainer">
-                                <div className="barBar bg-color1-500 dark:bg-color2-500"></div>
+                                <div className="barBar bg-lunar-100 dark:bg-solar-100"></div>
                             </div>
                         </div>
                         <div className="flex-1">
@@ -96,7 +96,9 @@ export default function Part5(prop) {
             </div>
             <div className='row-span-2 w-4/5 mx-auto'>
                 <div className='formLabel'>Description</div>
+
                 <textarea ref={prop.descriptionThree} placeholder='Describe your project' className='p-5 text-black w-full mx-auto rounded-dd placeholder:italic border-color1-500 h-full'></textarea>
+
             </div>
             <div className='pt-14  w-4/5 mx-auto '>
                 <div className=''>

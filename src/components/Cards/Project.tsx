@@ -38,7 +38,7 @@ export default function Project () {
         <div className="projectFooter">
           <div className="grid grid-cols-2 p-1 items-center">
             <Image src={badge} height={23} width={18}/>
-            <div className="text-left">00</div>
+            <div className="text-left">25</div>
           </div>
           <div className="grid grid-cols-4 p-1 items-center ">
             <Image src={donado} height={23} width={18}/>
@@ -50,5 +50,6 @@ export default function Project () {
         </div>
       </div>
     </div>
+    
   )
 }
