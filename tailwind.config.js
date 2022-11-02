@@ -54,6 +54,10 @@ module.exports = {
 				cyan:"#0e7490",
 				purple:"#a855f7",
 				indigo:"#a5b4fc",
+
+				backgroundImage: {
+					'stats': "url('/src/assets/w3cities.png')",
+				  },
 				
 				
 				backgrounds: {
@@ -97,23 +101,23 @@ module.exports = {
 					800: "#bfa98c",
 					700: "#cdaa7e",
 					600: "#daac71",
-					500: "#e1ad6a",
+					500: "#744b16",
 					400: "#e8ad63",
 					300: "#efae5c",
 					200: "#f6af55",
-					100: "#fdb04e",
+					100: "#E0A65A",
 				},
 
-				cyber: {
+				lunar: {
 					100: "#119195",
 					200: "#0b979b",
 					300: "#119195",
 					400: "#178b8f",
 					500: "#247f82",
-					600: "#376d6f",
+					600: "#024269",
 					700: "#3e6768",
 					800: "#4a5b5c",
-					900: "#515555",
+					900: "#011B2F",
 				},
 
 			
