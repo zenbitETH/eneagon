@@ -15,7 +15,7 @@ export default function Slides() {
 			{/*<Dashboard/>*/}
 			<div className='h-screen grid md:grid-cols-2 text-center items-center'>
 				<div className='pt-20 md:pt-0'>
-					<div className='2xl:text-8xl md:text-5xl text-3xl md:text-right text-white'>
+					<div className='2xl:text-8xl md:text-5xl text-3xl md:text-right text-white font-bold'>
 						Public Goods for Web3 Cities
 					</div>
 					<div className='gap-5 p-5 ml-auto grid grid-cols-5 items-center max-w-2xl text-center'>
@@ -27,10 +27,11 @@ export default function Slides() {
 					</div>
 				</div>
 				<div className='relative -mt-52 md:mt-0'>
-					<div className='absolute top-0 left-0 right-0 md:p-20 z-0'><Image src={W3C} height={1920} width={1920} /></div>
+					<div className='absolute top-0 left-0 right-0 md:p-20'><Image src={W3C} height={1920} width={1920} /></div>
 					<div className='opacity-0 cursor-pointer hover:opacity-100 transition ease-in-out'><Image src={Tags} height={1920} width={1920} className=" "/></div>
 				</div>
-			</div>			
+			</div>	
+			
 		</div>	
     )
 }
