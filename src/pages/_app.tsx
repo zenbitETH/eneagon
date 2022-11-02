@@ -20,7 +20,7 @@ const App = ({ Component, pageProps }) => {
 					<Header/>
 					{/*<Toolbar/>*/}
 					<Component {...pageProps} />
-					<ThemeSwitcher className="absolute bottom-6 right-6"/>
+					<ThemeSwitcher className="fixed bottom-6 right-6"/>
 				</div>
 			</Web3Provider>
 		</ThemeProvider>

@@ -4,7 +4,7 @@
 
 .header {
     @apply
-    fixed top-0 w-full px-5 sm:px-24 py-2.5 rounded bg-transparent my-3
+    fixed top-0 w-full px-5 sm:px-24 py-2.5 rounded  my-3 backdrop-blur-md 
 }
 
 .wrap {
