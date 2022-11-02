@@ -43,7 +43,19 @@ module.exports = {
 				  200: "#f7d9d5",
 				  100: "#fdf7f6",
 				},
-  
+				red:"#ef4444",
+				green:"#22c55e",
+				lime:"#84cc16",
+				amber:"#b45309",
+				fuchsia:"#c026d3",
+				pink:"#ec4899",
+				amber2:"#713f12",
+				blue:"#3b82f6",
+				cyan:"#0e7490",
+				purple:"#a855f7",
+				indigo:"#a5b4fc",
+				
+				
 				backgrounds: {
 					900: "#719CE4",//backgrounnd dark
 					800: "#2765cc",

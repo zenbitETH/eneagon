@@ -1,4 +1,5 @@
-export default function Part3() {
+export default function Part3(prop) {
+
     return (
         <div className='formSection'>
             <div>	    
@@ -66,20 +67,19 @@ export default function Part3() {
             <div className='  w-4/5 mx-auto '>
                 <div className=''>
                     <div className='formLabel'>🌱 Stage 01 name</div>
-                    <input type='url' placeholder='Set a name for the Stage 1' className='pl-5 text-black w-full mx-auto rounded-dd placeholder:italic border-color1-500'></input>                    
+                    <input ref={prop.stage} type='url' placeholder='Set a name for the Stage 1' className='pl-5 text-black w-full mx-auto rounded-dd placeholder:italic border-color1-500'></input>                    
                 </div>
                 
             </div>
             <div className='row-span-2 w-4/5 mx-auto'>
                 <div className='formLabel'>Description</div>
-                <textarea placeholder='Describe your project' className='p-5 text-black w-full mx-auto rounded-dd placeholder:italic border-color1-500 h-full'></textarea>
+                <textarea ref={prop.description} placeholder='Describe your project' className='p-5 text-black w-full mx-auto rounded-dd placeholder:italic border-color1-500 h-full'></textarea>
             </div>
             <div className='pt-14  w-4/5 mx-auto '>
                 <div className=''>
                     <div className='formLabel'>Github milestone URL</div>
-                    <input type='url' placeholder='Use a Github milestone to track this stage' className='pl-5 text-black w-full mx-auto rounded-dd placeholder:italic border-color1-500'></input>                    
+                    <input ref={prop.url} type='url' placeholder='Use a Github milestone to track this stage' className='pl-5 text-black w-full mx-auto rounded-dd placeholder:italic border-color1-500'></input>                    
                 </div>
-                
             </div>
             
             {/*<div className='text-right w-4/5 my-auto mx-auto'>

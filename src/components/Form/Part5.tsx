@@ -1,4 +1,28 @@
-export default function Part5() {
+export default function Part5(prop) {
+    
+    async function getFormData() {
+        const formData = {
+            logo:"",
+            projectName: prop.projectName.current.value,
+            projectType: prop.projectType.current.value,
+            projectDescription: prop.projectDescription.current.value,
+            demoUrl: prop.demoUrl.current.value,
+            gitUrl: prop.gitUrl.current.value,
+            contractAddress:prop.contractAddress.current.value,
+            contractType: prop.contractType.current.value,
+            networkName: prop.networkName.current.value,
+            stageOne: prop.stageOne.current.value,
+            descriptionOne: prop.descriptionOne.current.value,
+            urlOne: prop.urlOne.current.value,
+            stageTwo: prop.stageTwo.current.value,
+            descriptionTwo: prop.descriptionTwo.current.value,
+            urlTwo: prop.urlTwo.current.value,
+            stageThree: prop.stageThree.current.value,
+            descriptionThree:prop.descriptionThree.current.value,
+            urlThree: prop.urlThree.current.value
+        }
+
+    }
     return (
         <div className='formSection'>
             <div>	    
@@ -66,18 +90,18 @@ export default function Part5() {
             <div className='  w-4/5 mx-auto '>
                 <div className=''>
                     <div className='formLabel'>🌳 Stage 03 name</div>
-                    <input type='url' placeholder='Set a name for the Stage 1' className='pl-5 text-black w-full mx-auto rounded-dd placeholder:italic border-color1-500'></input>                    
+                    <input ref={prop.stageThree} type='url' placeholder='Set a name for the Stage 1' className='pl-5 text-black w-full mx-auto rounded-dd placeholder:italic border-color1-500'></input>                    
                 </div>
                 
             </div>
             <div className='row-span-2 w-4/5 mx-auto'>
                 <div className='formLabel'>Description</div>
-                <textarea placeholder='Describe your project' className='p-5 text-black w-full mx-auto rounded-dd placeholder:italic border-color1-500 h-full'></textarea>
+                <textarea ref={prop.descriptionThree} placeholder='Describe your project' className='p-5 text-black w-full mx-auto rounded-dd placeholder:italic border-color1-500 h-full'></textarea>
             </div>
             <div className='pt-14  w-4/5 mx-auto '>
                 <div className=''>
                     <div className='formLabel'>Github milestone URL</div>
-                    <input type='url' placeholder='Use a Github milestone to track this stage' className='pl-5 text-black w-full mx-auto rounded-dd placeholder:italic border-color1-500'></input>                    
+                    <input ref={prop.urlThree} type='url' placeholder='Use a Github milestone to track this stage' className='pl-5 text-black w-full mx-auto rounded-dd placeholder:italic border-color1-500'></input>                    
                 </div>
                 
             </div>
@@ -86,6 +110,7 @@ export default function Part5() {
                 <div className='projectBT w-1/4 ml-auto'>
                     Mint project NFT
                 </div>
+                {/* <button onClick={getFormData}>Click here</button> */}
             </div>
         </div>
     )

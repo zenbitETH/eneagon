@@ -1,4 +1,6 @@
-export default function Part2 () {
+import { getContractAddress } from "ethers/lib/utils"
+
+export default function Part2 (prop) {
     return (
         <div className='formSection'>
             <div>	    
@@ -66,20 +68,20 @@ export default function Part2 () {
             <div className="row-span-4 grid grid-rows-5 w-4/5 mx-auto gap-16">
                 <div className=''>
                     <div className='formLabel'>Web/Demo</div>
-                    <input type='url' placeholder='Paste your project URL' className='pl-5 text-black w-full mx-auto rounded-dd placeholder:italic border-color1-500'></input>
+                    <input type='url' ref={prop.demoUrl} placeholder='Paste your project URL' className='pl-5 text-black w-full mx-auto rounded-dd placeholder:italic border-color1-500'></input>
                 </div>
                 <div className=''>
                     <div className='formLabel'>Github repo url</div>
-                    <input type='url' placeholder='Paste the repository URL for the project' className='pl-5 text-black w-full mx-auto rounded-dd placeholder:italic border-color1-500'></input>
+                    <input type='url' ref={prop.gitUrl} placeholder='Paste the repository URL for the project' className='pl-5 text-black w-full mx-auto rounded-dd placeholder:italic border-color1-500'></input>
                 </div>
                 <div className=''>
                     <div className='formLabel'>Main contract address</div>
-                    <input type='url' placeholder='Paste the deployed contract address' className='pl-5 text-black w-full mx-auto rounded-dd placeholder:italic border-color1-500'></input>
+                    <input type='url' ref={prop.contractAddress} placeholder='Paste the deployed contract address' className='pl-5 text-black w-full mx-auto rounded-dd placeholder:italic border-color1-500'></input>
                 </div>
                 <div className=''>
                     <div className='formLabel'>Type of contract</div>
-                    <select className='pl-5 text-black w-full rounded-dd px-6 py-3 border-color1-500'>
-                        <option selected>Please select</option>
+                    <select ref={prop.contractType} className='pl-5 text-black w-full rounded-dd px-6 py-3 border-color1-500'>
+                        <option value="" selected>Please select</option>
                         <option>ERC20 token</option>
                         <option>ERC721 NFT</option>
                         <option>ERC1155 NFT</option>
@@ -90,8 +92,8 @@ export default function Part2 () {
                 </div>
                 <div className=''>
                     <div className='formLabel'>Deployment network</div>
-                    <select className='pl-5 text-black w-full rounded-dd px-6 py-3 border-color1-500'>
-                        <option selected>Please select</option>
+                    <select ref={prop.networkName} className='pl-5 text-black w-full rounded-dd px-6 py-3 border-color1-500'>
+                        <option value="" selected>Please select</option>
                         <option>Ethereum Mainnet</option>
                         <option>Optimism</option>
                         <option>Polygon</option>
