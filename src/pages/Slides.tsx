@@ -48,23 +48,19 @@ export default function Slides() {
 				<div className='web3BG'>
 					<div className='homeBT'> Gamified Citizenship</div>
 				
-					<Link href="www.punkcities.surge.sh" >
-						<div className='relative cursor-pointer'>
-							<Image src={PunkCities} height={500} width={500}/>
-						</div>
-					</Link>
-						
-					
+					<Link href="https://punkcities.surge.sh/" >
+						<Image src={PunkCities} height={500} width={500} className='cursor-pointer'/>
+					</Link>					
 
 					<div className=''>	
 						<div className='grid grid-cols-3 mx-auto items-center'>
-							<Link href="www.github.com/zenbitETH">
+							<Link href="https://punkcities.surge.sh/">
 								<div className='hover:bg-solar-900 rounded-full cursor-pointer h-8 w-fit m-auto'><Image height={33} width={33} src={Web}/></div>
 							</Link> 
-							<Link href="www.github.com/zenbitETH">
+							<Link href="https://github.com/zenbitETH/Punk-Cities">
 								<div className='hover:bg-solar-900 rounded-full cursor-pointer h-8 w-fit m-auto'><Image height={33} width={33} src={GH}/></div>
 							</Link>
-							<Link href="www.github.com/zenbitETH">
+							<Link href="https://ethglobal.com/showcase/punk-cities-0w24e">
 								<div className='hover:bg-solar-900 rounded-full cursor-pointer h-8 w-fit m-auto'><Image height={33} width={33}  src={Global}/></div>
 							</Link>
 						</div>
@@ -73,16 +69,16 @@ export default function Slides() {
 				</div>
 				<div className='web3BG'>
 						<div className='homeBT'> Decentralized Commerce </div>
-					<Link href="www.punkcities.surge.sh"><Image src={Deco} height={500} width={500}/></Link>
+					<Link href="https://deconft.surge.sh/" ><Image src={Deco} height={500} width={500} className='cursor-pointer'/></Link>
 					<div className=''>
 					<div className='grid grid-cols-3 mx-auto items-center'>
-							<Link href="www.github.com/zenbitETH">
+							<Link href="https://deconft.surge.sh/">
 								<div className='hover:bg-solar-900 rounded-full cursor-pointer h-8 w-fit m-auto'><Image height={33} width={33} src={Web}/></div>
 							</Link> 
-							<Link href="www.github.com/zenbitETH">
+							<Link href="https://github.com/zenbitETH/DeCo">
 								<div className='hover:bg-solar-900 rounded-full cursor-pointer h-8 w-fit m-auto'><Image height={33} width={33} src={GH}/></div>
 							</Link>
-							<Link href="www.github.com/zenbitETH">
+							<Link href="https://ethglobal.com/showcase/deco-zxa8s">
 								<div className='hover:bg-solar-900 rounded-full cursor-pointer h-8 w-fit m-auto'><Image height={33} width={33}  src={Global}/></div>
 							</Link>
 						</div>
@@ -91,16 +87,16 @@ export default function Slides() {
 				</div>
 				<div className='web3BG'>
 						<div className='homeBT'> Net Zero Mobility</div>
-					<Link href="www.punkcities.surge.sh"><Image src={Sparkz} height={500} width={500}/></Link>
+					<Link href="https://sparkz-chi.vercel.app/"><Image src={Sparkz} height={500} width={500} className='cursor-pointer'/></Link>
 					<div className=''>
 					<div className='grid grid-cols-3 mx-auto items-center'>
-							<Link href="www.github.com/zenbitETH">
+							<Link href="https://sparkz-chi.vercel.app/">
 								<div className='hover:bg-solar-900 rounded-full cursor-pointer h-8 w-fit m-auto'><Image height={33} width={33} src={Web}/></div>
 							</Link> 
-							<Link href="www.github.com/zenbitETH">
+							<Link href="https://github.com/zenbitETH/sparkz">
 								<div className='hover:bg-solar-900 rounded-full cursor-pointer h-8 w-fit m-auto'><Image height={33} width={33} src={GH}/></div>
 							</Link>
-							<Link href="www.github.com/zenbitETH">
+							<Link href="https://ethglobal.com/showcase/sparkz-00gkp">
 								<div className='hover:bg-solar-900 rounded-full cursor-pointer h-8 w-fit m-auto'><Image height={33} width={33}  src={Global}/></div>
 							</Link>
 						</div>
@@ -109,16 +105,16 @@ export default function Slides() {
 				</div>
 				<div className='web3BG'>
 						<div className='homeBT'> Regenerative Tourism</div>
-					<Link href="www.punkcities.surge.sh"><Image src={Voyage} height={500} width={500}/></Link>
+					<Link href="https://voyage-git-demo-punkcities.vercel.app/"><Image src={Voyage} height={500} width={500} className='cursor-pointer'/></Link>
 					<div className=''>
 					<div className='grid grid-cols-3 mx-auto items-center'>
-							<Link href="www.github.com/zenbitETH">
+							<Link href="https://voyage-git-demo-punkcities.vercel.app/">
 								<div className='hover:bg-solar-900 rounded-full cursor-pointer h-8 w-fit m-auto'><Image height={33} width={33} src={Web}/></div>
 							</Link> 
-							<Link href="www.github.com/zenbitETH">
+							<Link href="https://github.com/zenbitETH/voyage">
 								<div className='hover:bg-solar-900 rounded-full cursor-pointer h-8 w-fit m-auto'><Image height={33} width={33} src={GH}/></div>
 							</Link>
-							<Link href="www.github.com/zenbitETH">
+							<Link href="https://ethglobal.com/showcase/voyage-tqbtt">
 								<div className='hover:bg-solar-900 rounded-full cursor-pointer h-8 w-fit m-auto'><Image height={33} width={33}  src={Global}/></div>
 							</Link>
 						</div>
@@ -133,16 +129,16 @@ export default function Slides() {
 				<div className='grid md:grid-cols-2 max-w-3xl mx-auto  gap-16 px-5 '>
 				<div className='web3BG'>
 						<div className='homeBT'> Urban Governance</div>
-					<Link href="www.punkcities.surge.sh"><Image src={CiudadesDAO} height={500} width={500}/></Link>
+					<Link href="https://ciudadesdao.org/"><Image src={CiudadesDAO} height={500} width={500} className='cursor-pointer'/></Link>
 					<div className=''>	
 					<div className='grid grid-cols-3 mx-auto items-center'>
-							<Link href="www.github.com/zenbitETH">
+							<Link href="https://ciudadesdao.org/">
 								<div className='hover:bg-solar-900 rounded-full cursor-pointer h-8 w-fit m-auto'><Image height={33} width={33} src={Web}/></div>
 							</Link> 
-							<Link href="www.github.com/zenbitETH">
+							<Link href="https://github.com/zenbitETH/Ciudades-DAO">
 								<div className='hover:bg-solar-900 rounded-full cursor-pointer h-8 w-fit m-auto'><Image height={33} width={33} src={GH}/></div>
 							</Link>
-							<Link href="www.github.com/zenbitETH">
+							<Link href="https://ethglobal.com/showcase/cities-protocol-qtxz8">
 								<div className='hover:bg-solar-900 rounded-full cursor-pointer h-8 w-fit m-auto'><Image height={33} width={33}  src={Global}/></div>
 							</Link>
 						</div>
@@ -151,16 +147,16 @@ export default function Slides() {
 				</div>
 				<div className='web3BG'>
 						<div className='homeBT'> Retroactive Funding</div>
-					<Link href="www.punkcities.surge.sh"><Image src={Eneagon} height={500} width={500}/></Link>
+					<Link href="https://zenbit.mx/"><Image src={Eneagon} height={500} width={500} className='cursor-pointer'/></Link>
 					<div className=''>
 					<div className='grid grid-cols-3 mx-auto items-center'>
-						<Link href="www.github.com/zenbitETH">
+						<Link href="https://zenbit.mx/">
 							<div className='hover:bg-solar-900 rounded-full cursor-pointer h-8 w-fit m-auto'><Image height={33} width={33} src={Web}/></div>
 						</Link> 
-						<Link href="www.github.com/zenbitETH">
+						<Link href="https://github.com/zenbitETH/eneagon">
 							<div className='hover:bg-solar-900 rounded-full cursor-pointer h-8 w-fit m-auto'><Image height={33} width={33} src={GH}/></div>
 						</Link>
-						<Link href="www.github.com/zenbitETH">
+						<Link href="https://ethglobal.com/showcase/eneagon-0hf0o">
 							<div className='hover:bg-solar-900 rounded-full cursor-pointer h-8 w-fit m-auto'><Image height={33} width={33}  src={Global}/></div>
 						</Link>
 					</div>
