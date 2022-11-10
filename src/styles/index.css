@@ -5,7 +5,21 @@
 @tailwind utilities;
 
 
-  
+.homeBT {
+    @apply
+    bg-solar-900 px-5 py-3  mx-auto rounded-t-xl
+}
+
+
+.web3BG {
+    @apply
+    relative bg-glass-700 rounded-2xl
+}
+
+.homeDS {
+    @apply
+    p-3 pt-5 text-justify
+}
 
 .tabUsers, .tabMembers {
     @apply 
