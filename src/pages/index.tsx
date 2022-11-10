@@ -1,5 +1,4 @@
 import { FC } from 'react'
-import Dashboard from '@/components/Dashboard';
 import Slides from './Slides';
 
 

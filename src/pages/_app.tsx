@@ -7,7 +7,6 @@ import '../styles/stages.css'
 import { ThemeProvider } from 'next-themes'
 import Web3Provider from '@/components/Web3Provider'
 import Header from '@/components/Header'; 
-import Toolbar from '@/components/Toolbar'
 import ThemeSwitcher from '@/components/ThemeSwitcher'
 
 const App = ({ Component, pageProps }) => {
