@@ -97,7 +97,7 @@ module.exports = {
 				},
 
 				solar: {
-					900: "#aaa6a1",
+					900: "#E0A65A95",
 					800: "#bfa98c",
 					700: "#cdaa7e",
 					600: "#daac71",
