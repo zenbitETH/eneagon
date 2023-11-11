@@ -7,6 +7,7 @@ export default function Header() {
           <h1 className='w-full h-full '>
             <span className='font-bold text-2xl animate-pulse'> OP Retro PGF round 3 is live! </span> <br/>
             <span>  If you are a Badgeholder, please consider voting for us here!</span>
+            
           </h1>
         </Link>
       </div>
