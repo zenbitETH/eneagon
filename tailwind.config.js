@@ -15,8 +15,7 @@ module.exports = {
 		  colors: {
 			display: ["group-hover"],
 			bgd: "#101427",
-			bgm: "#006363",
-			bgc: "#e88110",
+			op: "#F35454",
 			cit: "#F3A754",
 			mod: "#008A8A",
 			backgrounds: {
