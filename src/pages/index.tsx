@@ -12,7 +12,7 @@ const Home: FC = () => {
 					<div className='flex gap-5 justify-center'>
 						<Link className='' href="https://github.com/zenbitETH" >
 							<button className='homeBT'>
-								Repos
+								Code Repos
 							</button>
 						</Link>
 					</div>
